@@ -1,5 +1,5 @@
 /*!
- * Source https://github.com/donmahallem/github-release-action
+ * Source https://github.com/donmahallem/lerna-label
  */
 
 import * as actionscore from '@actions/core';
@@ -22,9 +22,10 @@ const pullRequestConfig: IOpts = {
     repo: github.context.repo.repo,
 };
 const githubClient: github.GitHub = new github.GitHub(config.GITHUB_SECRET) as any;
-handle(githubClient as any, pullRequestConfig, config.PREFIX, './').catch((err) => {
-    actionscore.error(err);
-    actionscore.setFailed(err.message || 'Error');
-}).then(() => {
-    actionscore.info('Success');
-});
+handle(githubClient as any, pullRequestConfig, config.PREFIX, './')
+    .catch((err: any): void => {
+        actionscore.error(err);
+        actionscore.setFailed(err.message || 'Error');
+    }).then((): void => {
+        actionscore.info('Success');
+    });

@@ -1,5 +1,5 @@
 /*!
- * Source https://github.com/donmahallem/github-release-action
+ * Source https://github.com/donmahallem/lerna-label
  */
 
 export interface IConfig {

@@ -1,16 +1,18 @@
-
 /*!
- * Source https://github.com/donmahallem/github-release-action
+ * Source https://github.com/donmahallem/lerna-label
  */
 
 import { syncPRLabels } from '@donmahallem/label-pr';
 import { IOpts } from '@donmahallem/label-pr/dist/types/sync-pr-labels';
 import { Octokit } from '@octokit/core';
 import { resolve } from 'path';
-import { IPackage, parseLernaPackages } from './parse-lerna-packages';
+import { parseLernaPackages, IPackage } from './parse-lerna-packages';
 import { getChangedFiles } from './pr-changed-files';
 
-export const handle = async (octokit: Octokit, opts: IOpts, prefix: string = 'pkg', cwd: string = './') => {
+export const handle = async (octokit: Octokit,
+    opts: IOpts,
+    prefix: string = 'pkg',
+    cwd: string = './'): Promise<void> => {
     const lernaCfg: IPackage[] = await parseLernaPackages(cwd);
     const changedFiles: string[] = await getChangedFiles(octokit, opts);
     const resolvedChangedFiles: string[] = changedFiles
