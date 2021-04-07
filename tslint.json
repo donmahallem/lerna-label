@@ -1,0 +1,18 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "@donmahallem/tslint-config"
+    ],
+    "rules": {
+        "file-header": [
+            true,
+            {
+                "match": "Source https://github.com/donmahallem/lerna-label",
+                "allow-single-line-comments": true,
+                "default": "Source https://github.com/donmahallem/lerna-label",
+                "enforce-trailing-newline": false
+            }
+        ]
+    },
+    "rulesDirectory": []
+}

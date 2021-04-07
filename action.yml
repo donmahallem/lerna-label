@@ -1,0 +1,16 @@
+name: 'Label Lerna PR'
+description: "Label Pull Request based on lerna labels"
+inputs:
+  github_secret:  # id of input
+    description: 'List of valid labels'
+    required: true
+  prefix:  # id of input
+    description: 'Prefix for labels'
+    required: false
+    default: 'pkg'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+branding:
+  icon: 'bookmark'
+  color: 'orange'
