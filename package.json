@@ -106,7 +106,7 @@
     "src/*"
   ],
   "dependencies": {
-    "@actions/core": "~1.2.6",
+    "@actions/core": "~1.2.7",
     "@actions/github": "~2.2.0",
     "@donmahallem/label-pr": "~0.1.2",
     "@lerna/project": "~4.0.0",
