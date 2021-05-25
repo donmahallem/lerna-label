@@ -63,7 +63,7 @@
     "@types/mocha": "8.2.2",
     "@types/node": "14.17.1",
     "@types/sinon": "10.0.1",
-    "@vercel/ncc": "0.28.5",
+    "@vercel/ncc": "0.28.6",
     "chai": "4.3.4",
     "commitizen": "4.2.4",
     "mocha": "8.4.0",
