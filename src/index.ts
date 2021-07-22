@@ -22,7 +22,16 @@ const pullRequestConfig: IOpts = {
     pull_number: githubContext.payload.pull_request?.number || 0,
     repo: githubContext.repo.repo,
 };
+
+actionscore.startGroup(`Got started with config`);
+actionscore.info(`PREFIX: ${config.PREFIX}`);
+actionscore.info(`OWNER: ${pullRequestConfig.owner}`);
+actionscore.info(`REPO: ${pullRequestConfig.repo}`);
+actionscore.info(`PULL_NUMBER: ${pullRequestConfig.pull_number}`);
+actionscore.endGroup();
+
 const githubClient: Octokit = getOctokit(config.GITHUB_SECRET);
+
 handle(githubClient, pullRequestConfig, config.PREFIX, './')
     .catch((err: any): void => {
         actionscore.error(err);
