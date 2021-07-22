@@ -19,6 +19,6 @@ RUN npm cache clean --force
 
 RUN echo "Building with Endpoint ${MW_ENDPOINT} and Port ${MW_PORT}"
 
-USER node
+#USER node
 ENTRYPOINT ["node", "./dist/index.js"]
-CMD [ "api" ]
+#CMD [ "api" ]
