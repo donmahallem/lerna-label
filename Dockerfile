@@ -1,6 +1,5 @@
 FROM node:16
 
-WORKDIR /usr/src/app
 COPY package*.json tsconfig*.json ./
 COPY ./src ./src
 
@@ -13,5 +12,5 @@ RUN npm ci --production
 RUN npm cache clean --force
 
 #USER node
-ENTRYPOINT ["node", "/usr/src/app/dist/index.js"]
+ENTRYPOINT ["node", "./dist/index.js"]
 #CMD [ "api" ]
