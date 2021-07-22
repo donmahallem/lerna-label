@@ -13,6 +13,7 @@
     "test": "mocha --config ./.mocharc.yml",
     "test:coverage": "nyc --nycrc-path ./.nycrc.json npm run test",
     "build:live": "nodemon",
+    "build:readme": "npx @appnest/readme generate --input ./readme_blueprint.md --config readme_config.json",
     "build": "tsc",
     "test-ci": "nyc npm run test",
     "lint": "tslint -c tslint.json -p tsconfig.json src/**/*.ts",
@@ -58,6 +59,7 @@
     "esModuleInterop": true
   },
   "devDependencies": {
+    "@appnest/readme": "1.2.7",
     "@donmahallem/tslint-config": "0.1.3",
     "@types/chai": "4.2.21",
     "@types/mocha": "9.0.0",
