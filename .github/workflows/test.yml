@@ -33,3 +33,10 @@ jobs:
         uses: docker/setup-buildx-action@v1
       - name: Test Build
         run: docker build .
+  finish:
+    needs: [test_suite, test_project_docker]
+    name: Finish Test
+    runs-on: ubuntu-latest
+    steps:
+    - name: Coveralls Finished
+      run: echo "finish"
