@@ -34,7 +34,7 @@ jobs:
       - name: Test Build
         run: docker build .
   finish:
-    needs: [test_suite, test_project_docker]
+    needs: [test_project, test_project_docker]
     name: Finish Test
     runs-on: ubuntu-latest
     steps:
