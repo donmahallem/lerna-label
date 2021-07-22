@@ -3,8 +3,9 @@
  */
 
 import * as actionscore from '@actions/core';
-import * as github from '@actions/github';
+import { context as githubContext, getOctokit } from '@actions/github';
 import { IOpts } from '@donmahallem/label-pr/dist/types/sync-pr-labels';
+import { Octokit } from '@octokit/core';
 import { IConfig } from './config';
 import { handle } from './handle';
 
@@ -17,12 +18,12 @@ const config: IConfig = {
     }),
 };
 const pullRequestConfig: IOpts = {
-    owner: github.context.repo.owner,
-    pull_number: github.context.payload.pull_request?.number || 0,
-    repo: github.context.repo.repo,
+    owner: githubContext.repo.owner,
+    pull_number: githubContext.payload.pull_request?.number || 0,
+    repo: githubContext.repo.repo,
 };
-const githubClient: github.GitHub = new github.GitHub(config.GITHUB_SECRET) as any;
-handle(githubClient as any, pullRequestConfig, config.PREFIX, './')
+const githubClient: Octokit = getOctokit(config.GITHUB_SECRET);
+handle(githubClient, pullRequestConfig, config.PREFIX, './')
     .catch((err: any): void => {
         actionscore.error(err);
         actionscore.setFailed(err.message || 'Error');
