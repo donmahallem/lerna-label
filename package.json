@@ -24,7 +24,8 @@
     "test:unit": "npm run test-ci",
     "test:docs": "npm run docs",
     "ncc:build": "ncc build ./src/index.ts -o ./dist -s",
-    "ncc:run": "ncc run"
+    "ncc:run": "ncc run",
+    "postversion": "npm run build:readme"
   },
   "homepage": "https://donmahallem.github.io/lerna-label/",
   "author": {
