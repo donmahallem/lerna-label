@@ -25,7 +25,7 @@
     "test:docs": "npm run docs",
     "ncc:build": "ncc build ./src/index.ts -o ./dist -s",
     "ncc:run": "ncc run",
-    "postversion": "npm run build:readme"
+    "postversion": "npm run build:readme && git add README.md"
   },
   "homepage": "https://donmahallem.github.io/lerna-label/",
   "author": {
