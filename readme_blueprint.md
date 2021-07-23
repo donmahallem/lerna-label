@@ -3,9 +3,14 @@
 
 {{ template:description }}
 
-## Usage
+## Details
 
-Run the following command to install the package:
+This action labels your pull requests based on modified files within the pull request. 
+It takes the package name and adds an optional prefix and adds an label.
+
+If a package isn't touched anymore the tag will be removed.
+
+## Usage
 
 ```
 name: Workspace Package Labeler
