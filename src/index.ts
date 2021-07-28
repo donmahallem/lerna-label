@@ -1,5 +1,6 @@
-/*!
- * Source https://github.com/donmahallem/lerna-label
+/*
+ * Package @donmahallem/lerna-label
+ * Source https://donmahallem.github.io/lerna-label/
  */
 
 import * as actionscore from '@actions/core';
@@ -33,9 +34,11 @@ actionscore.endGroup();
 const githubClient: Octokit = getOctokit(config.GITHUB_SECRET);
 
 handle(githubClient, pullRequestConfig, config.PREFIX, './')
-    .catch((err: any): void => {
-        actionscore.error(err);
-        actionscore.setFailed(err.message || 'Error');
-    }).then((): void => {
+    .then((): void => {
         actionscore.info('Success');
+    })
+    .catch((err: any | Error): void => {
+        actionscore.error(err);
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+        actionscore.setFailed(err?.message || 'Error');
     });

@@ -1,18 +1,18 @@
-/*!
- * Source https://github.com/donmahallem/github-release-action
+/*
+ * Package @donmahallem/lerna-label
+ * Source https://donmahallem.github.io/lerna-label/
  */
 
 import * as syncPRLabels from '@donmahallem/label-pr';
-import { expect } from "chai";
-import "mocha";
+import { expect } from 'chai';
+import 'mocha';
 import { resolve } from 'path';
 import sinon from 'sinon';
 import { handle } from './handle';
 import * as lernaPackages from './parse-lerna-packages';
 import * as prChangedFiles from './pr-changed-files';
 
-describe("handle.ts", () => {
-
+describe('handle.ts', () => {
     let sandbox: sinon.SinonSandbox;
     before((): void => {
         sandbox = sinon.createSandbox();
@@ -47,21 +47,12 @@ describe("handle.ts", () => {
                 },
             ];
             parseLernaPackages.resolves(testPackages);
-            getChangedFilesStub.resolves([
-                'packages/dir1/any.json',
-                'packages/dir2/any.json',
-                'unknown/dir3/any.json'
-            ]);
+            getChangedFilesStub.resolves(['packages/dir1/any.json', 'packages/dir2/any.json', 'unknown/dir3/any.json']);
             syncPRLabelsStub.resolves();
             await handle('octokit' as any, 'pr opts' as any, undefined as any);
             expect(getChangedFilesStub.callCount).to.equal(1);
             expect(syncPRLabelsStub.callCount).to.equal(1);
-            expect(syncPRLabelsStub.getCall(0).args).to.deep.eq([
-                'octokit',
-                'pr opts' as any,
-                ['dir1', 'dir2'],
-                'pkg',
-            ])
+            expect(syncPRLabelsStub.getCall(0).args).to.deep.eq(['octokit', 'pr opts' as any, ['dir1', 'dir2'], 'pkg']);
         });
     });
 });
