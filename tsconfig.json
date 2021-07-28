@@ -20,6 +20,5 @@
     "baseUrl": "./src",
     "exclude": [
         "node_modules",
-        "src/**/*.spec.ts"
     ]
 }

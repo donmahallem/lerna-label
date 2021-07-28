@@ -1,5 +1,6 @@
-/*!
- * Source https://github.com/donmahallem/lerna-label
+/*
+ * Package @donmahallem/lerna-label
+ * Source https://donmahallem.github.io/lerna-label/
  */
 
 export interface IConfig {
