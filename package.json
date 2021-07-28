@@ -44,6 +44,18 @@
   "engines": {
     "node": ">=12.0.0"
   },
+  "contributors": [
+    {
+      "name": "donmahallem",
+      "email": "donmahallem@users.noreply.github.com",
+      "url": "https://github.com/donmahallem",
+      "img": "https://avatars.githubusercontent.com/u/4698322?v=4",
+      "info": [
+        "💻",
+        "🐛"
+      ]
+    }
+  ],
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
