@@ -6,11 +6,14 @@
 ## Details
 
 This action labels your pull requests based on modified files within the pull request. 
-It takes the package name and adds an optional prefix and adds an label.
+It takes the package name and adds an optional prefix to it before setting it as a label.
+Other labels should not be touched by this action.
 
-If a package isn't touched anymore the tag will be removed.
+### Example Projects
 
-## Usage
+This action is used for example by [donmahallem/js-libs](https://github.com/donmahallem/js-libs/pulls)
+
+## Example Config
 
 ```
 name: Workspace Package Labeler
@@ -33,3 +36,5 @@ jobs:
           github_secret: "${ { secrets.GITHUB_TOKEN } }"
           prefix: "pkg"
 ```
+
+{{ template:contributors }}
