@@ -1,19 +1,20 @@
 pull_request_rules:
-  - name: automatic merge dependabot PRs into dev
+  - name: merge PRs labeled ready-to-merge
     conditions:
-      - author~=^dependabot(|-preview)\[bot\]$
-      - status-success=Node 10 Tests
-      - status-success=Node 12 Tests
-      - base=dev
+      - status-success=Finish Test
+      - label=ready-to-merge
     actions:
       merge:
         method: squash
         strict: smart+fasttrack
-        strict_method: rebase
+        strict_method: merge
   - name: delete head branch on merged pull requests
     conditions:
       - merged
       - -head~=^(master|dev)$
       - -author~=^dependabot(|-preview)\[bot\]$
     actions:
+      label:
+        remove:
+          - ready-to-merge
       delete_head_branch:
