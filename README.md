@@ -6,6 +6,7 @@
 		<a href="https://github.com/donmahallem/lerna-label/actions?query=workflow%3ATest+branch%3Amain"><img alt="Test" src="https://github.com/donmahallem/lerna-label/workflows/Test/badge.svg?branch=main&event=push" height="20"/></a>
 <a href="https://codecov.io/gh/donmahallem/lerna-label/branch/main"><img alt="codecov" src="https://codecov.io/gh/donmahallem/lerna-label/branch/main/graph/badge.svg" height="20"/></a>
 <a href="https://github.com/donmahallem/lerna-label/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/donmahallem/lerna-label" height="20"/></a>
+<a href="https://github.com/donmahallem/lerna-label"><img alt="David" src="https://img.shields.io/david/donmahallem/lerna-label" height="20"/></a>
 <a href="https://github.com/donmahallem/lerna-label"><img alt="David" src="https://img.shields.io/david/dev/donmahallem/lerna-label" height="20"/></a>
 <a href="https://github.com/donmahallem/lerna-label/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors-anon/donmahallem/lerna-label" height="20"/></a>
 	</p>
@@ -53,7 +54,7 @@ jobs:
       - name: "Checkout code"
         uses: actions/checkout@v2.3.4
       - name: Label the PR
-        uses: donmahallem/lerna-label@0.0.7
+        uses: donmahallem/lerna-label@0.0.8
         with:
           github_secret: "${ { secrets.GITHUB_TOKEN } }"
           prefix: "pkg"
@@ -68,7 +69,6 @@ jobs:
 | [<img alt="donmahallem" src="https://avatars.githubusercontent.com/u/4698322?v=4" width="100">](https://github.com/donmahallem) |
 |:--------------------------------------------------:|
 | [donmahallem](https://github.com/donmahallem)    |
-| [donmahallem@users.noreply.github.com](mailto:donmahallem@users.noreply.github.com) |
 | 💻                                               |
 | 🐛                                               |
 
