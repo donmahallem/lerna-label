@@ -19,6 +19,11 @@
         {
             "alt": "David",
             "url": "https://github.com/donmahallem/lerna-label",
+            "img": "https://img.shields.io/david/donmahallem/lerna-label"
+        },
+        {
+            "alt": "David",
+            "url": "https://github.com/donmahallem/lerna-label",
             "img": "https://img.shields.io/david/dev/donmahallem/lerna-label"
         },
         {

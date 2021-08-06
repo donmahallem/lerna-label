@@ -1,12 +1,13 @@
-/*!
- * Source https://github.com/donmahallem/github-release-action
+/*
+ * Package @donmahallem/lerna-label
+ * Source https://donmahallem.github.io/lerna-label/
  */
 
-import { expect } from "chai";
-import "mocha";
+import { expect } from 'chai';
+import 'mocha';
 
-describe("index", () => {
-    it("should contain FlowApiValidator", () => {
+describe('index', () => {
+    it('should contain FlowApiValidator', () => {
         expect(true).to.not.be.eq(false);
     });
 });
