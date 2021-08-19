@@ -10,7 +10,7 @@ on:
 jobs:
   publish_action:
     runs-on: ubuntu-latest
-    name: Publishing the Action
+    name: Publishing action to ${{GITHUB_REF##*/}}
     steps:
       - name: Checkout
         uses: actions/checkout@v2

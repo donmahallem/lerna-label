@@ -16,6 +16,7 @@
   "scripts": {
     "test": "mocha --config ./.mocharc.yml",
     "test:coverage": "nyc --nycrc-path ./.nycrc.json npm run test",
+    "build:ncc": "ncc build ./src/index.ts -o ./dist -s",
     "build:live": "nodemon",
     "build:readme": "npx @appnest/readme generate --input ./readme_blueprint.md --config readme_config.json",
     "build": "tsc -p tsconfig.app.json",
