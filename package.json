@@ -1,7 +1,7 @@
 {
   "name": "@donmahallem/lerna-label",
   "version": "0.0.8",
-  "description": "Require Labels for Github Actions",
+  "description": "Tags Github Pull Requests with affected Lerna packages",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "private": false,
