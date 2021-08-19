@@ -6,8 +6,12 @@
   "types": "dist/index.d.ts",
   "private": false,
   "keywords": [
-    "api",
-    "types"
+    "github",
+    "action",
+    "lerna",
+    "tag",
+    "pull-request",
+    "pr"
   ],
   "scripts": {
     "test": "mocha --config ./.mocharc.yml",
