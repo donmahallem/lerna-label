@@ -78,7 +78,7 @@
   },
   "devDependencies": {
     "@appnest/readme": "1.2.7",
-    "@donmahallem/eslint-config": "0.2.6",
+    "@donmahallem/eslint-config": "0.2.7",
     "@types/chai": "4.2.21",
     "@types/mocha": "9.0.0",
     "@types/node": "14.17.11",
