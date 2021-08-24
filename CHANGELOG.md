@@ -1,3 +1,13 @@
+## [0.1.2](https://github.com/donmahallem/lerna-label/compare/v0.1.1...v0.1.2) (2021-08-24)
+
+
+### Bug Fixes
+
+* **docker:** fix broken docker build ([#149](https://github.com/donmahallem/lerna-label/issues/149)) ([79535ce](https://github.com/donmahallem/lerna-label/commit/79535ceb49d0186bb4a4e07570cfa48b7ddca017))
+* **docker:** set NODE_ENV to production ([9472cb6](https://github.com/donmahallem/lerna-label/commit/9472cb6e523a8d9f32f0b22b408c26b1892395ef))
+
+
+
 ## [0.1.1](https://github.com/donmahallem/lerna-label/compare/v0.1.0...v0.1.1) (2021-08-24)
 
 
