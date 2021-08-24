@@ -17,6 +17,7 @@
     "test": "mocha --config ./.mocharc.yml",
     "test:coverage": "nyc --nycrc-path ./.nycrc.json npm run test",
     "build:live": "nodemon",
+    "build:changelog": "npx conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "build:readme": "npx @appnest/readme generate --input ./readme_blueprint.md --config readme_config.json",
     "build": "tsc -p tsconfig.app.json",
     "test-ci": "nyc npm run test",
@@ -31,7 +32,7 @@
     "test:docs": "npm run docs",
     "ncc:build": "ncc build ./src/index.ts -o ./dist -s",
     "ncc:run": "ncc run",
-    "version": "npm run build:readme && git add README.md"
+    "version": "npm run build:readme && npm run build:changelog && git add README.md && git add CHANGELOG.md"
   },
   "homepage": "https://donmahallem.github.io/lerna-label/",
   "author": {
