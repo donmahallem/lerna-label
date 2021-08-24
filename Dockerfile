@@ -4,13 +4,11 @@ WORKDIR /app
 COPY package*.json tsconfig*.json ./
 COPY ./src ./src
 
-RUN npm ci
-#COPY . .
-RUN npm run build
-
-# Clean build
-RUN npm ci --production
-RUN npm cache clean --force
+RUN npm ci \
+    npm run build \
+    npm prune --production \
+    npm ci --production \
+    npm cache clean --force
 
 WORKDIR /data
 
