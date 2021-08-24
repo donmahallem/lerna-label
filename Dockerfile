@@ -3,7 +3,6 @@ FROM node:16.7-alpine
 WORKDIR /app
 COPY package*.json tsconfig*.json ./
 COPY ./src ./src
-COPY ./build.sh ./build.sh
 
 RUN npm ci && \
     npm run build && \
