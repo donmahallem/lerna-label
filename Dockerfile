@@ -4,13 +4,13 @@ WORKDIR /app
 COPY package*.json tsconfig*.json ./
 COPY ./src ./src
 
-RUN npm ci \
-    npm run build \
-    npm prune --production \
-    npm ci --production \
+RUN npm ci && \
+    npm run build && \
+    npm prune --production && \
+    npm ci --production && \
     npm cache clean --force
 
-WORKDIR /data
+#WORKDIR /data
 
 #USER node
 ENTRYPOINT ["node", "/app/dist/index.js"]
