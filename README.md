@@ -13,7 +13,7 @@
 
 
 <p align="center">
-  <b>Require Labels for Github Actions</b></br>
+  <b>Tags Github Pull Requests with affected Lerna packages</b></br>
   <sub><sub>
 </p>
 
@@ -54,7 +54,7 @@ jobs:
       - name: "Checkout code"
         uses: actions/checkout@v2.3.4
       - name: Label the PR
-        uses: donmahallem/lerna-label@0.0.8
+        uses: donmahallem/lerna-label@0.1.0
         with:
           github_secret: "${ { secrets.GITHUB_TOKEN } }"
           prefix: "pkg"
