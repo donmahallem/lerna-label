@@ -11,7 +11,7 @@ RUN npm ci && \
     npm cache clean --force
 
 #WORKDIR /data
-
+ENV NODE_ENV=production
 #USER node
 ENTRYPOINT ["node", "/app/dist/index.js"]
 #CMD [ "api" ]
