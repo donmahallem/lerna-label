@@ -62,21 +62,6 @@
       ]
     }
   ],
-  "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "lib": [
-      "es2017",
-      "es7",
-      "es6",
-      "dom"
-    ],
-    "declaration": true,
-    "outDir": "./dist/",
-    "baseUrl": "./src/",
-    "strict": true,
-    "esModuleInterop": true
-  },
   "devDependencies": {
     "@appnest/readme": "1.2.7",
     "@donmahallem/eslint-config": "0.2.9",
@@ -97,32 +82,6 @@
     "ts-node": "10.2.1",
     "typedoc": "0.21.9",
     "typescript": "4.4.2"
-  },
-  "nyc": {
-    "include": [
-      "src/*.ts",
-      "src/**/*.ts"
-    ],
-    "exclude": [
-      "typings",
-      "src/**/*.spec.ts",
-      "**/*.d.ts"
-    ],
-    "extension": [
-      ".ts"
-    ],
-    "require": [
-      "ts-node/register"
-    ],
-    "reporter": [
-      "json",
-      "html",
-      "text-summary",
-      "lcov"
-    ],
-    "sourceMap": true,
-    "instrument": true,
-    "all": true
   },
   "files": [
     "dist/*",
