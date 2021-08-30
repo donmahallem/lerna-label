@@ -98,32 +98,6 @@
     "typedoc": "0.21.9",
     "typescript": "4.4.2"
   },
-  "nyc": {
-    "include": [
-      "src/*.ts",
-      "src/**/*.ts"
-    ],
-    "exclude": [
-      "typings",
-      "src/**/*.spec.ts",
-      "**/*.d.ts"
-    ],
-    "extension": [
-      ".ts"
-    ],
-    "require": [
-      "ts-node/register"
-    ],
-    "reporter": [
-      "json",
-      "html",
-      "text-summary",
-      "lcov"
-    ],
-    "sourceMap": true,
-    "instrument": true,
-    "all": true
-  },
   "files": [
     "dist/*",
     "src/*"
