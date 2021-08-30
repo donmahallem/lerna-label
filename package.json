@@ -62,21 +62,6 @@
       ]
     }
   ],
-  "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "lib": [
-      "es2017",
-      "es7",
-      "es6",
-      "dom"
-    ],
-    "declaration": true,
-    "outDir": "./dist/",
-    "baseUrl": "./src/",
-    "strict": true,
-    "esModuleInterop": true
-  },
   "devDependencies": {
     "@appnest/readme": "1.2.7",
     "@donmahallem/eslint-config": "0.2.9",
