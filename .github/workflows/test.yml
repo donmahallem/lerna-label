@@ -18,9 +18,16 @@ jobs:
       - name: Npm install
         run: npm ci
       - name: Npm Lint
-        run: npm run test:lint
+        run: npm run lint
       - name: Npm test
-        run: npm run test:unit
+        run: npm run test:coverage
+      - name: Upload coverage to Codecov Monorepo
+        uses: codecov/codecov-action@v2.0.3
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          name: Test
+          fail_ci_if_error: false
+          verbose: false
   test_project_docker:
     runs-on: ubuntu-latest
     name: Docker Tests
