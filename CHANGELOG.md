@@ -1,3 +1,12 @@
+## [0.1.4](https://github.com/donmahallem/lerna-label/compare/v0.1.3...v0.1.4) (2021-09-06)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @donmahallem/label-pr to ~0.2.5 ([41fbe14](https://github.com/donmahallem/lerna-label/commit/41fbe141d53cc1c9522190e6c994dc4618a3a1f2))
+
+
+
 ## [0.1.3](https://github.com/donmahallem/lerna-label/compare/v0.1.2...v0.1.3) (2021-08-30)
 
 
@@ -101,7 +110,6 @@
 
 ### Bug Fixes
 
-* use absolute path for distribution files ([0c6c584](https://github.com/donmahallem/lerna-label/commit/0c6c5849bb1c0b4f0c920b82936956d87ad11079))
 * **deps:** update dependency @actions/core to ~1.2.7 ([f5113c5](https://github.com/donmahallem/lerna-label/commit/f5113c57747c0cf32f83a30d77dbbefa9803e626))
 * **deps:** update dependency @actions/core to ~1.3.0 ([87ef647](https://github.com/donmahallem/lerna-label/commit/87ef6470d0e979367e14a7f9eb3cb5a48cddbe99))
 * **deps:** update dependency @actions/core to ~1.4.0 ([7b961d4](https://github.com/donmahallem/lerna-label/commit/7b961d46deef0339ced7e76788288a8e97d04a47))
@@ -117,6 +125,7 @@
 * **deps:** update dependency @donmahallem/label-pr to ~0.1.9 ([5d8a051](https://github.com/donmahallem/lerna-label/commit/5d8a051c773c59d236762c228870e75c2ecf91b8))
 * **deps:** update dependency @octokit/core to ~3.5.0 ([19e9e44](https://github.com/donmahallem/lerna-label/commit/19e9e4414272ea194f01c85e10047a80ea1236f3))
 * **deps:** update dependency @octokit/core to ~3.5.1 ([d2eb017](https://github.com/donmahallem/lerna-label/commit/d2eb0174c6d160c4037552b088119d8a7870ee01))
+* use absolute path for distribution files ([0c6c584](https://github.com/donmahallem/lerna-label/commit/0c6c5849bb1c0b4f0c920b82936956d87ad11079))
 
 
 ### Features
