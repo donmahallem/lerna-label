@@ -64,10 +64,10 @@
   ],
   "devDependencies": {
     "@appnest/readme": "1.2.7",
-    "@donmahallem/eslint-config": "0.2.9",
+    "@donmahallem/eslint-config": "0.2.10",
     "@types/chai": "4.2.21",
     "@types/mocha": "9.0.0",
-    "@types/node": "14.17.12",
+    "@types/node": "14.17.14",
     "@types/sinon": "10.0.2",
     "@vercel/ncc": "0.30.0",
     "chai": "4.3.4",
@@ -90,7 +90,7 @@
   "dependencies": {
     "@actions/core": "~1.5.0",
     "@actions/github": "~5.0.0",
-    "@donmahallem/label-pr": "~0.2.4",
+    "@donmahallem/label-pr": "~0.2.5",
     "@lerna/project": "~4.0.0",
     "@octokit/core": "~3.5.1"
   }
