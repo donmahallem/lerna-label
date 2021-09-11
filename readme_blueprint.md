@@ -20,14 +20,13 @@ This action is used for example by [donmahallem/js-libs](https://github.com/donm
 
 ## Example Config
 
+This config show cases a simple workflow to label pull requests with already known packages.
 ```
 name: Workspace Package Labeler
 on:
-  pull_request:
+  pull_request_target:
     types: [opened, edited, synchronize]
-    branches-ignore:
-      - master
-
+    
 jobs:
   label:
     name: Label Package Pull Requests
