@@ -9,20 +9,24 @@ This action labels your pull requests based on modified files within the pull re
 It takes the package name and adds an optional prefix to it before setting it as a label.
 Other labels should not be touched by this action.
 
-### Example Projects
+## Security Considerations
+
+This action should be run on 'pull_request_target' events BUT consider to not checkout the target commit. For information about this read [here](https://securitylab.github.com/research/github-actions-preventing-pwn-requests/)
+Additionally this prevents malicious actors to spam your repository with new tags! 
+
+## Example Projects
 
 This action is used for example by [donmahallem/js-libs](https://github.com/donmahallem/js-libs/pulls)
 
 ## Example Config
 
+This config show cases a simple workflow to label pull requests with already known packages.
 ```
 name: Workspace Package Labeler
 on:
-  pull_request:
+  pull_request_target:
     types: [opened, edited, synchronize]
-    branches-ignore:
-      - master
-
+    
 jobs:
   label:
     name: Label Package Pull Requests
