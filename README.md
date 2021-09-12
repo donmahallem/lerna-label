@@ -29,7 +29,18 @@ This action labels your pull requests based on modified files within the pull re
 It takes the package name and adds an optional prefix to it before setting it as a label.
 Other labels should not be touched by this action.
 
-### Example Projects
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/water.png)](#security-considerations)
+
+## ➤ Security Considerations
+
+This action should be run on 'pull_request_target' events BUT consider to not checkout the target commit. For information about this read [here](https://securitylab.github.com/research/github-actions-preventing-pwn-requests/)
+Additionally this prevents malicious actors to spam your repository with new tags! 
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/water.png)](#example-projects)
+
+## ➤ Example Projects
 
 This action is used for example by [donmahallem/js-libs](https://github.com/donmahallem/js-libs/pulls)
 
@@ -38,14 +49,13 @@ This action is used for example by [donmahallem/js-libs](https://github.com/donm
 
 ## ➤ Example Config
 
+This config show cases a simple workflow to label pull requests with already known packages.
 ```
 name: Workspace Package Labeler
 on:
-  pull_request:
+  pull_request_target:
     types: [opened, edited, synchronize]
-    branches-ignore:
-      - master
-
+    
 jobs:
   label:
     name: Label Package Pull Requests
@@ -54,7 +64,7 @@ jobs:
       - name: "Checkout code"
         uses: actions/checkout@v2.3.4
       - name: Label the PR
-        uses: donmahallem/lerna-label@0.1.4
+        uses: donmahallem/lerna-label@0.1.5
         with:
           github_secret: "${ { secrets.GITHUB_TOKEN } }"
           prefix: "pkg"
