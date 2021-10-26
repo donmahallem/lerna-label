@@ -67,7 +67,7 @@
     "@donmahallem/eslint-config": "0.2.13",
     "@types/chai": "4.2.22",
     "@types/mocha": "9.0.0",
-    "@types/node": "16.3.0",
+    "@types/node": "16.11.6",
     "@types/sinon": "10.0.6",
     "@vercel/ncc": "0.31.1",
     "chai": "4.3.4",
