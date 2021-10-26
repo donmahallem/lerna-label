@@ -13,7 +13,11 @@ export interface IPackage {
 }
 
 const packageRegex = /^(@[a-z\d][\w\-.]+\/)?(.+)$/;
-/** naïvely splits package name into optional scope and basename */
+/**
+ * naïvely splits package name into optional scope and basename
+ *
+ * @param name
+ */
 const parsePackageName = (
     name: string
 ): {

@@ -64,33 +64,33 @@
   ],
   "devDependencies": {
     "@appnest/readme": "1.2.7",
-    "@donmahallem/eslint-config": "0.2.11",
-    "@types/chai": "4.2.21",
+    "@donmahallem/eslint-config": "0.3.0",
+    "@types/chai": "4.2.22",
     "@types/mocha": "9.0.0",
-    "@types/node": "16.3.0",
-    "@types/sinon": "10.0.2",
-    "@vercel/ncc": "0.31.0",
+    "@types/node": "16.11.6",
+    "@types/sinon": "10.0.6",
+    "@vercel/ncc": "0.31.1",
     "chai": "4.3.4",
     "commitizen": "4.2.4",
     "conventional-changelog-cli": "2.1.1",
-    "eslint": "7.32.0",
-    "mocha": "9.1.1",
-    "nodemon": "2.0.12",
+    "eslint": "8.1.0",
+    "mocha": "9.1.3",
+    "nodemon": "2.0.14",
     "nyc": "15.1.0",
-    "prettier": "2.4.0",
+    "prettier": "2.4.1",
     "sinon": "11.1.2",
-    "ts-node": "10.2.1",
-    "typedoc": "0.22.3",
-    "typescript": "4.4.3"
+    "ts-node": "10.4.0",
+    "typedoc": "0.22.7",
+    "typescript": "4.4.4"
   },
   "files": [
     "dist/*",
     "src/*"
   ],
   "dependencies": {
-    "@actions/core": "~1.5.0",
+    "@actions/core": "~1.6.0",
     "@actions/github": "~5.0.0",
-    "@donmahallem/label-pr": "~0.2.6",
+    "@donmahallem/label-pr": "~0.2.9",
     "@lerna/project": "~4.0.0",
     "@octokit/core": "~3.5.1"
   }

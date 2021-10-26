@@ -38,7 +38,8 @@ handle(githubClient, pullRequestConfig, config.PREFIX, './')
         actionscore.info('Success');
     })
     .catch((err: any | Error): void => {
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
         actionscore.error(err);
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-argument
         actionscore.setFailed(err?.message || 'Error');
     });

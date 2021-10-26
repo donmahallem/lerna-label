@@ -12,6 +12,7 @@ import { handle } from './handle';
 import * as lernaPackages from './parse-lerna-packages';
 import * as prChangedFiles from './pr-changed-files';
 
+/* eslint-disable  @typescript-eslint/no-unsafe-argument */
 describe('handle.ts', () => {
     let sandbox: sinon.SinonSandbox;
     before((): void => {
