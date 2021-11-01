@@ -1,3 +1,12 @@
+## [0.1.7](https://github.com/donmahallem/lerna-label/compare/v0.1.6...v0.1.7) (2021-11-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @donmahallem/label-pr to ~0.2.10 ([1e1f696](https://github.com/donmahallem/lerna-label/commit/1e1f6965db98ded2997dc937d839abd9628123c0))
+
+
+
 ## [0.1.6](https://github.com/donmahallem/lerna-label/compare/v0.1.5...v0.1.6) (2021-10-26)
 
 
