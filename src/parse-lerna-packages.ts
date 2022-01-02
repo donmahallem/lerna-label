@@ -3,6 +3,7 @@
  * Source https://donmahallem.github.io/lerna-label/
  */
 
+import { Package } from '@lerna/package';
 import { getPackages } from '@lerna/project';
 
 export interface IPackage {
@@ -32,23 +33,23 @@ const parsePackageName = (
     // tslint:disable-next-line:triple-equals
     return splits[1] != undefined
         ? {
-              basename: splits[2],
-              scope: splits[1].slice(0, -1),
-          }
+            basename: splits[2],
+            scope: splits[1].slice(0, -1),
+        }
         : {
-              basename: splits[2],
-          };
+            basename: splits[2],
+        };
 };
 export const parseLernaPackages = async (cwd: string): Promise<IPackage[]> => {
     // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call
-    const pkgs: IPackage[] = await getPackages(cwd);
+    const pkgs: Package[] = await getPackages(cwd);
 
-    return pkgs.map((pkg: IPackage): IPackage => {
+    return pkgs.map((pkg: Package): IPackage => {
         return {
             location: pkg.location,
-            name: pkg.name,
+            name: pkg.get('name'),
             rootPath: pkg.rootPath,
-            ...parsePackageName(pkg.name),
+            ...parsePackageName(pkg.get('name')),
         };
     });
 };
