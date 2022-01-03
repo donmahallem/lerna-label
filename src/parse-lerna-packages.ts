@@ -15,9 +15,16 @@ export interface IPackage {
 
 const packageRegex = /^(@[a-z\d][\w\-.]+\/)?(.+)$/;
 /**
+* The complete Triforce, or one or more components of the Triforce.
+* @typedef {Object} SplitPackage
+* @property {string} basename - Package name without scope
+* @property {string} [scope] - If provided the package scope
+*/
+/**
  * naïvely splits package name into optional scope and basename
  *
- * @param name
+ * @param {string} name package name
+ * @returns {SplitPackage} package name by scope
  */
 const parsePackageName = (
     name: string
