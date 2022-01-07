@@ -15,11 +15,12 @@ export interface IPackage {
 
 const packageRegex = /^(@[a-z\d][\w\-.]+\/)?(.+)$/;
 /**
-* The complete Triforce, or one or more components of the Triforce.
-* @typedef {Object} SplitPackage
-* @property {string} basename - Package name without scope
-* @property {string} [scope] - If provided the package scope
-*/
+ * The complete Triforce, or one or more components of the Triforce.
+ *
+ * @typedef {Object} SplitPackage
+ * @property {string} basename - Package name without scope
+ * @property {string} [scope] - If provided the package scope
+ */
 /**
  * naïvely splits package name into optional scope and basename
  *
@@ -40,12 +41,12 @@ const parsePackageName = (
     // tslint:disable-next-line:triple-equals
     return splits[1] != undefined
         ? {
-            basename: splits[2],
-            scope: splits[1].slice(0, -1),
-        }
+              basename: splits[2],
+              scope: splits[1].slice(0, -1),
+          }
         : {
-            basename: splits[2],
-        };
+              basename: splits[2],
+          };
 };
 export const parseLernaPackages = async (cwd: string): Promise<IPackage[]> => {
     // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call
