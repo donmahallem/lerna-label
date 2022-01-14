@@ -3,6 +3,7 @@
  * Source https://donmahallem.github.io/lerna-label/
  */
 
+import { Package } from '@lerna/package';
 import { getPackages } from '@lerna/project';
 
 export interface IPackage {
@@ -14,9 +15,17 @@ export interface IPackage {
 
 const packageRegex = /^(@[a-z\d][\w\-.]+\/)?(.+)$/;
 /**
+ * The complete Triforce, or one or more components of the Triforce.
+ *
+ * @typedef {Object} SplitPackage
+ * @property {string} basename - Package name without scope
+ * @property {string} [scope] - If provided the package scope
+ */
+/**
  * naïvely splits package name into optional scope and basename
  *
- * @param name
+ * @param {string} name package name
+ * @returns {SplitPackage} package name by scope
  */
 const parsePackageName = (
     name: string
@@ -41,14 +50,14 @@ const parsePackageName = (
 };
 export const parseLernaPackages = async (cwd: string): Promise<IPackage[]> => {
     // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call
-    const pkgs: IPackage[] = await getPackages(cwd);
+    const pkgs: Package[] = await getPackages(cwd);
 
-    return pkgs.map((pkg: IPackage): IPackage => {
+    return pkgs.map((pkg: Package): IPackage => {
         return {
             location: pkg.location,
-            name: pkg.name,
+            name: pkg.get('name'),
             rootPath: pkg.rootPath,
-            ...parsePackageName(pkg.name),
+            ...parsePackageName(pkg.get('name')),
         };
     });
 };
