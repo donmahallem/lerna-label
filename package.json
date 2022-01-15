@@ -34,7 +34,7 @@
     "ncc:run": "ncc run",
     "version": "npm run build:readme && npm run build:changelog && git add README.md && git add CHANGELOG.md"
   },
-  "homepage": "https://donmahallem.github.io/lerna-label/",
+  "homepage": "https://github.com/donmahallem/lerna-label/",
   "author": {
     "name": "donmahallem",
     "email": "donmahallem@users.noreply.github.com",
