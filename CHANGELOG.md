@@ -1,9 +1,15 @@
+## [0.1.12](https://github.com/donmahallem/lerna-label/compare/v0.1.11...v0.1.12) (2022-01-15)
+
+
+
 ## [0.1.11](https://github.com/donmahallem/lerna-label/compare/v0.1.10...v0.1.11) (2022-01-15)
 
 
 ### Bug Fixes
 
 * require node 14 ([d233138](https://github.com/donmahallem/lerna-label/commit/d233138b4ab3ac4db3a59f2ba8a836a23a770013))
+
+
 
 ## [0.1.10](https://github.com/donmahallem/lerna-label/compare/v0.1.9...v0.1.10) (2022-01-14)
 
@@ -14,6 +20,8 @@
 * **deps:** update dependency @donmahallem/label-pr to ~0.3.3 ([0be3e00](https://github.com/donmahallem/lerna-label/commit/0be3e0015a24d5369c4abad85b781de3b589fc5f))
 * **deps:** update dependency @donmahallem/label-pr to ~0.3.4 ([2ad90eb](https://github.com/donmahallem/lerna-label/commit/2ad90eb23779ff340d8e944b8cc67012550feb83))
 * **deps:** update dependency @donmahallem/label-pr to ~0.3.5 ([af15ec1](https://github.com/donmahallem/lerna-label/commit/af15ec183625dbfb155c1351463670e9bcbac8ad))
+
+
 
 ## [0.1.9](https://github.com/donmahallem/lerna-label/compare/v0.1.8...v0.1.9) (2021-12-24)
 
@@ -201,3 +209,6 @@
 ### Features
 
 * use docker to publish action ([#95](https://github.com/donmahallem/lerna-label/issues/95)) ([a4c7e16](https://github.com/donmahallem/lerna-label/commit/a4c7e163d29240c783d4944b17f2874951146e65))
+
+
+
