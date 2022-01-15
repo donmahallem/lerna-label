@@ -1,6 +1,6 @@
 /*
  * Package @donmahallem/lerna-label
- * Source https://donmahallem.github.io/lerna-label/
+ * Source https://github.com/donmahallem/lerna-label/
  */
 
 import * as syncPRLabels from '@donmahallem/label-pr';
