@@ -74,7 +74,7 @@
     "@types/node": "16.11.21",
     "@types/sinon": "10.0.8",
     "@vercel/ncc": "0.33.1",
-    "chai": "4.3.5",
+    "chai": "4.3.6",
     "commitizen": "4.2.4",
     "conventional-changelog-cli": "2.2.2",
     "eslint": "8.7.0",
