@@ -73,7 +73,7 @@
     "@types/mocha": "9.1.0",
     "@types/node": "16.11.24",
     "@types/sinon": "10.0.11",
-    "@vercel/ncc": "0.33.2",
+    "@vercel/ncc": "0.33.3",
     "chai": "4.3.6",
     "commitizen": "4.2.4",
     "conventional-changelog-cli": "2.2.2",
