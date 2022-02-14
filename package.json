@@ -71,7 +71,7 @@
     "@types/lerna__package": "4.0.1",
     "@types/lerna__project": "4.0.0",
     "@types/mocha": "9.1.0",
-    "@types/node": "16.11.24",
+    "@types/node": "16.11.25",
     "@types/sinon": "10.0.11",
     "@vercel/ncc": "0.33.3",
     "chai": "4.3.6",
