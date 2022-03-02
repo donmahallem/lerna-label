@@ -1,3 +1,50 @@
+## [0.1.15](https://github.com/donmahallem/lerna-label/compare/v0.1.14...v0.1.15) (2022-02-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @donmahallem/label-pr to ~0.3.7 ([a04dab4](https://github.com/donmahallem/lerna-label/commit/a04dab45fbbbe45cf7ed35899b51383d2e9237f4))
+
+
+
+## [0.1.14](https://github.com/donmahallem/lerna-label/compare/v0.1.13...v0.1.14) (2022-02-06)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @donmahallem/label-pr to ~0.3.6 ([3549e15](https://github.com/donmahallem/lerna-label/commit/3549e15bcf7911489ad8573a9d5004ffc5969d67))
+
+
+
+## [0.1.13](https://github.com/donmahallem/lerna-label/compare/v0.1.12...v0.1.13) (2022-01-15)
+
+
+
+## [0.1.12](https://github.com/donmahallem/lerna-label/compare/v0.1.11...v0.1.12) (2022-01-15)
+
+
+
+## [0.1.11](https://github.com/donmahallem/lerna-label/compare/v0.1.10...v0.1.11) (2022-01-15)
+
+
+### Bug Fixes
+
+* require node 14 ([d233138](https://github.com/donmahallem/lerna-label/commit/d233138b4ab3ac4db3a59f2ba8a836a23a770013))
+
+
+
+## [0.1.10](https://github.com/donmahallem/lerna-label/compare/v0.1.9...v0.1.10) (2022-01-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @donmahallem/label-pr to ~0.3.2 ([e590cb7](https://github.com/donmahallem/lerna-label/commit/e590cb7c202dfd42ae55760b82250adaa9fc43c3))
+* **deps:** update dependency @donmahallem/label-pr to ~0.3.3 ([0be3e00](https://github.com/donmahallem/lerna-label/commit/0be3e0015a24d5369c4abad85b781de3b589fc5f))
+* **deps:** update dependency @donmahallem/label-pr to ~0.3.4 ([2ad90eb](https://github.com/donmahallem/lerna-label/commit/2ad90eb23779ff340d8e944b8cc67012550feb83))
+* **deps:** update dependency @donmahallem/label-pr to ~0.3.5 ([af15ec1](https://github.com/donmahallem/lerna-label/commit/af15ec183625dbfb155c1351463670e9bcbac8ad))
+
+
+
 ## [0.1.9](https://github.com/donmahallem/lerna-label/compare/v0.1.8...v0.1.9) (2021-12-24)
 
 

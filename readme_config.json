@@ -17,16 +17,6 @@
             "img": "https://img.shields.io/github/license/donmahallem/lerna-label"
         },
         {
-            "alt": "David",
-            "url": "https://github.com/donmahallem/lerna-label",
-            "img": "https://img.shields.io/david/donmahallem/lerna-label"
-        },
-        {
-            "alt": "David",
-            "url": "https://github.com/donmahallem/lerna-label",
-            "img": "https://img.shields.io/david/dev/donmahallem/lerna-label"
-        },
-        {
             "alt": "GitHub contributors",
             "url": "https://github.com/donmahallem/lerna-label/graphs/contributors",
             "img": "https://img.shields.io/github/contributors-anon/donmahallem/lerna-label"
