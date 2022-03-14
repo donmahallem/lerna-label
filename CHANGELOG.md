@@ -1,3 +1,12 @@
+## [0.1.16](https://github.com/donmahallem/lerna-label/compare/v0.1.15...v0.1.16) (2022-03-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @octokit/core to ~3.6.0 ([c57f6c4](https://github.com/donmahallem/lerna-label/commit/c57f6c4f4955312d03a58665d43f1dcd071e6b2d))
+
+
+
 ## [0.1.15](https://github.com/donmahallem/lerna-label/compare/v0.1.14...v0.1.15) (2022-02-22)
 
 
