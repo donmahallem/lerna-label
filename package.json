@@ -1,102 +1,92 @@
 {
-  "name": "@donmahallem/lerna-label",
-  "version": "0.1.16",
-  "description": "Tags Github Pull Requests with affected Lerna packages",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "private": false,
-  "keywords": [
-    "github",
-    "action",
-    "lerna",
-    "tag",
-    "pull-request",
-    "pr"
-  ],
-  "scripts": {
-    "test": "mocha --config ./.mocharc.yml",
-    "test:coverage": "nyc --nycrc-path ./.nycrc.json npm run test",
-    "build:live": "nodemon",
-    "build:changelog": "npx conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
-    "build:readme": "npx @appnest/readme generate --input ./readme_blueprint.md --config readme_config.json",
-    "build": "tsc -p tsconfig.app.json",
-    "test-ci": "nyc npm run test",
-    "lint": "eslint -c .eslintrc.js --ext .ts ./src",
-    "postlint": "prettier --config .prettierrc src/**/*.ts src/*.ts --check",
-    "lint:fix": "eslint -c .eslintrc.js --ext .ts ./src --fix",
-    "postlint:fix": "prettier --config .prettierrc src/**/*.ts src/*.ts --write",
-    "docs": "typedoc --options typedoc.json",
-    "test:lint": "npm run lint",
-    "test:build": "npm run build",
-    "test:unit": "npm run test-ci",
-    "test:docs": "npm run docs",
-    "ncc:build": "ncc build ./src/index.ts -o ./dist -s",
-    "ncc:run": "ncc run",
-    "version": "npm run build:readme && npm run build:changelog && git add README.md && git add CHANGELOG.md"
-  },
-  "homepage": "https://github.com/donmahallem/lerna-label/",
-  "author": {
-    "name": "donmahallem",
-    "email": "donmahallem@users.noreply.github.com",
-    "url": "https://github.com/donmahallem"
-  },
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/donmahallem/lerna-label/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/donmahallem/lerna-label.git"
-  },
-  "engines": {
-    "node": ">=14.0.0"
-  },
-  "contributors": [
-    {
-      "name": "donmahallem",
-      "url": "https://github.com/donmahallem",
-      "img": "https://avatars.githubusercontent.com/u/4698322?v=4",
-      "info": [
-        "💻",
-        "🐛"
-      ]
+    "name": "@donmahallem/lerna-label",
+    "version": "0.1.16",
+    "description": "Tags Github Pull Requests with affected Lerna packages",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "private": false,
+    "keywords": [
+        "github",
+        "action",
+        "lerna",
+        "tag",
+        "pull-request",
+        "pr"
+    ],
+    "scripts": {
+        "test": "mocha --config ./.mocharc.yml",
+        "test:coverage": "nyc --nycrc-path ./.nycrc.json npm run test",
+        "build:readme": "npx @appnest/readme generate --input ./readme_blueprint.md --config readme_config.json",
+        "build": "tsc -p tsconfig.app.json",
+        "lint": "eslint -c .eslintrc.js --ext .ts ./src",
+        "postlint": "prettier --config .prettierrc src/**/*.ts src/*.ts --check",
+        "lint:fix": "eslint -c .eslintrc.js --ext .ts ./src --fix",
+        "postlint:fix": "prettier --config .prettierrc src/**/*.ts src/*.ts --write",
+        "docs": "typedoc --options typedoc.json",
+        "version": "npm run build:readme && npm run build:changelog && git add README.md && git add CHANGELOG.md"
+    },
+    "homepage": "https://github.com/donmahallem/lerna-label/",
+    "author": {
+        "name": "donmahallem",
+        "email": "donmahallem@users.noreply.github.com",
+        "url": "https://github.com/donmahallem"
+    },
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/donmahallem/lerna-label/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/donmahallem/lerna-label.git"
+    },
+    "engines": {
+        "node": ">=14.0.0"
+    },
+    "contributors": [
+        {
+            "name": "donmahallem",
+            "url": "https://github.com/donmahallem",
+            "img": "https://avatars.githubusercontent.com/u/4698322?v=4",
+            "info": [
+                "💻",
+                "🐛"
+            ]
+        }
+    ],
+    "devDependencies": {
+        "@appnest/readme": "1.2.7",
+        "@donmahallem/eslint-config": "1.0.29",
+        "@semantic-release/changelog": "6.0.1",
+        "@semantic-release/git": "10.0.1",
+        "@types/chai": "4.3.0",
+        "@types/lerna__package": "4.0.1",
+        "@types/lerna__project": "4.0.0",
+        "@types/mocha": "9.1.0",
+        "@types/node": "16.11.26",
+        "@types/sinon": "10.0.11",
+        "chai": "4.3.6",
+        "commitizen": "4.2.4",
+        "conventional-changelog-cli": "2.2.2",
+        "eslint": "8.11.0",
+        "mocha": "9.2.2",
+        "nodemon": "2.0.15",
+        "nyc": "15.1.0",
+        "prettier": "2.5.1",
+        "semantic-release": "19.0.2",
+        "sinon": "13.0.1",
+        "ts-node": "10.7.0",
+        "typedoc": "0.22.13",
+        "typescript": "4.6.2"
+    },
+    "files": [
+        "dist/*",
+        "src/*"
+    ],
+    "dependencies": {
+        "@actions/core": "~1.6.0",
+        "@actions/github": "~5.0.0",
+        "@donmahallem/label-pr": "~0.3.7",
+        "@lerna/project": "~4.0.0",
+        "@octokit/core": "~3.6.0"
     }
-  ],
-  "devDependencies": {
-    "@appnest/readme": "1.2.7",
-    "@donmahallem/eslint-config": "1.0.29",
-    "@semantic-release/changelog": "6.0.1",
-    "@semantic-release/git": "10.0.1",
-    "@types/chai": "4.3.0",
-    "@types/lerna__package": "4.0.1",
-    "@types/lerna__project": "4.0.0",
-    "@types/mocha": "9.1.0",
-    "@types/node": "16.11.26",
-    "@types/sinon": "10.0.11",
-    "@vercel/ncc": "0.33.3",
-    "chai": "4.3.6",
-    "commitizen": "4.2.4",
-    "conventional-changelog-cli": "2.2.2",
-    "eslint": "8.11.0",
-    "mocha": "9.2.2",
-    "nodemon": "2.0.15",
-    "nyc": "15.1.0",
-    "prettier": "2.5.1",
-    "semantic-release": "19.0.2",
-    "sinon": "13.0.1",
-    "ts-node": "10.7.0",
-    "typedoc": "0.22.13",
-    "typescript": "4.6.2"
-  },
-  "files": [
-    "dist/*",
-    "src/*"
-  ],
-  "dependencies": {
-    "@actions/core": "~1.6.0",
-    "@actions/github": "~5.0.0",
-    "@donmahallem/label-pr": "~0.3.7",
-    "@lerna/project": "~4.0.0",
-    "@octokit/core": "~3.6.0"
-  }
 }
