@@ -1,4 +1,4 @@
-FROM node:17.7-alpine
+FROM node:17.8-alpine
 
 WORKDIR /app
 COPY package*.json tsconfig*.json ./
