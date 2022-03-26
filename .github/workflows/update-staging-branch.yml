@@ -27,11 +27,6 @@ jobs:
                   fetch-depth: 0
                   token: ${{ secrets.GITHUB_TOKEN }}
                   ref: ${{ github.event.workflow_run.head_branch }}
-            - name: Setup Node
-              uses: actions/setup-node@v3.0.0
-              with:
-                  node-version: ${{ matrix.node }}
-                  registry-url: 'https://registry.npmjs.org'
             - name: Install Deps
               run: |
                   npm ci
