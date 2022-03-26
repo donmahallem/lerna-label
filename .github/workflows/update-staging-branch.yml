@@ -1,15 +1,17 @@
 name: Update staging branch
 on:
-    push:
-        branches:
-            - main
+    workflow_run:
+        workflows: [Test]
+        types: [completed]
+        branches: [master]
 concurrency:
     group: update_staging_branch
     cancel-in-progress: true
 jobs:
-    build_suite:
+    update-staging:
         runs-on: ${{ matrix.os }}
         name: Update Staging branch
+        if: ${{ github.event.workflow_run.conclusion == 'success' }}
         concurrency:
             group: release_version
         timeout-minutes: 30

@@ -22,10 +22,9 @@
         "@semantic-release/release-notes-generator",
         "@semantic-release/changelog",
         [
-            "@semantic-release/git",
+            "@semantic-release/npm",
             {
-                "assets": ["package-lock.json", "package.json", "README.md", "CHANGELOG.md"],
-                "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+                "npmPublish": false
             }
         ]
     ],
