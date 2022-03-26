@@ -35,18 +35,23 @@ jobs:
                   git config --local user.email "donmahallem@users.noreply.github.com"
                   git config --local user.name "donmahallem"
             - name: Version Packages
-              uses: codfish/semantic-release-action@v1.9.0
-              id: semantic
-              env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-                  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+              run: npx standard-version
+            - name: Create Release Body
+              id: get-pr-body
+              run: |
+                  body=$(npx conventional-changelog -r 1)
+                  body="${body//'%'/'%25'}"
+                  body="${body//$'\n'/'%0A'}"
+                  body="${body//$'\r'/'%0D'}" 
+                  echo ::set-output name=body::$body
+                  node ./.github/extract-version.js
             - name: Prepare Release
               uses: peter-evans/create-pull-request@v4.0.0
               with:
                   branch: release-staging
-                  title: 'chore: stage release ${{ steps.semantic.outputs.release-version }} [skip ci]'
-                  body: ${{ steps.semantic.outputs.release-notes }}
+                  title: 'chore: stage release ${{ steps.get-pr-body.outputs.version }} [skip ci]'
+                  body: ${{ steps.get-pr-body.outputs.body }}
                   token: ${{ secrets.GITHUB_TOKEN }}
                   base: main
-                  commit-message: 'chore: stage release ${{ steps.semantic.outputs.release-version }}'
+                  commit-message: 'chore: stage release ${{ steps.get-pr-body.outputs.version }}'
                   reviewers: donmahallem
