@@ -26,23 +26,7 @@
             {
                 "npmPublish": false
             }
-        ],
-        [
-            "@semantic-release/git",
-            {
-                "assets": [
-                    "package-lock.json",
-                    "package.json",
-                    "README.md",
-                    "CHANGELOG.md"
-                ],
-                "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
-            }
-        ],
-        "@semantic-release/github"
+        ]
     ],
-    "branches": [
-        "main",
-        "master"
-    ]
+    "branches": ["main"]
 }
