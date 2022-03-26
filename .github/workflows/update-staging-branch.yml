@@ -35,19 +35,10 @@ jobs:
                   git config --local user.email "donmahallem@users.noreply.github.com"
                   git config --local user.name "donmahallem"
             - name: Version Packages
-              run: npx semantic-release
+              uses: codfish/semantic-release-action@v1.9.0
               env:
-                  GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-                  NPM_TOKEN: ${{ secrets.NPM_PUBLISH }}
-            - name: Create Release Body
-              id: get-pr-body
-              run: |
-                  body=$(npx conventional-changelog -r 1)
-                  body="${body//'%'/'%25'}"
-                  body="${body//$'\n'/'%0A'}"
-                  body="${body//$'\r'/'%0D'}" 
-                  echo ::set-output name=body::$body
-                  node ./.github/extract-version.js
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
             - name: Prepare Release
               uses: peter-evans/create-pull-request@v4.0.0
               with:
