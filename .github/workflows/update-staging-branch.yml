@@ -36,6 +36,7 @@ jobs:
                   git config --local user.name "donmahallem"
             - name: Version Packages
               uses: codfish/semantic-release-action@v1.9.0
+              id: semantic
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -43,9 +44,9 @@ jobs:
               uses: peter-evans/create-pull-request@v4.0.0
               with:
                   branch: release-staging
-                  title: 'chore: stage release ${{ steps.get-pr-body.outputs.version }} [skip ci]'
-                  body: ${{ steps.get-pr-body.outputs.body }}
+                  title: 'chore: stage release ${{ steps.semantic.outputs.release-version }} [skip ci]'
+                  body: ${{ steps.semantic.outputs.release-notes }}
                   token: ${{ secrets.GITHUB_TOKEN }}
                   base: main
-                  commit-message: 'chore: stage release ${{ steps.get-pr-body.outputs.version }}'
+                  commit-message: 'chore: stage release ${{ steps.semantic.outputs.release-version }}'
                   reviewers: donmahallem
