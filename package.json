@@ -83,7 +83,7 @@
     "dependencies": {
         "@actions/core": "~1.6.0",
         "@actions/github": "~5.0.0",
-        "@donmahallem/label-pr": "~0.3.8",
+        "@donmahallem/label-pr": "~0.3.9",
         "@lerna/project": "~4.0.0",
         "@octokit/core": "~3.6.0"
     }
