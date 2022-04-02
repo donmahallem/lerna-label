@@ -69,7 +69,7 @@
         "mocha": "9.2.2",
         "nodemon": "2.0.15",
         "nyc": "15.1.0",
-        "prettier": "2.6.1",
+        "prettier": "2.6.2",
         "sinon": "13.0.1",
         "standard-version": "9.3.2",
         "ts-node": "10.7.0",
