@@ -5,6 +5,7 @@
 
 import { Package } from '@lerna/package';
 import { getPackages } from '@lerna/project';
+import npa from 'npm-package-arg';
 
 export interface IPackage {
     location: string;
@@ -13,14 +14,6 @@ export interface IPackage {
     scope?: string;
 }
 
-const packageRegex = /^(@[a-z\d][\w\-.]+\/)?(.+)$/;
-/**
- * The complete Triforce, or one or more components of the Triforce.
- *
- * @typedef {Object} SplitPackage
- * @property {string} basename - Package name without scope
- * @property {string} [scope] - If provided the package scope
- */
 /**
  * naïvely splits package name into optional scope and basename
  *
@@ -33,19 +26,15 @@ const parsePackageName = (
     basename: string;
     scope?: string;
 } => {
-    const splits: RegExpMatchArray | null = packageRegex.exec(name);
-    // tslint:disable-next-line:triple-equals
-    if (splits == undefined) {
-        throw new Error('Could not parse package name');
-    }
-    // tslint:disable-next-line:triple-equals
-    return splits[1] != undefined
+    const resolved = npa(name);
+    const basename: string = resolved.scope ? resolved.name!.substring(resolved.scope.length + 1) : resolved.name!;
+    return resolved.scope
         ? {
-              basename: splits[2],
-              scope: splits[1].slice(0, -1),
+              basename,
+              scope: resolved.scope,
           }
         : {
-              basename: splits[2],
+              basename,
           };
 };
 export const parseLernaPackages = async (cwd: string): Promise<IPackage[]> => {
