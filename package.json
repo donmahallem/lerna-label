@@ -58,7 +58,7 @@
         "@donmahallem/eslint-config": "1.0.91",
         "@types/chai": "4.3.1",
         "@types/lerna__package": "5.1.0",
-        "@types/lerna__project": "4.0.0",
+        "@types/lerna__project": "5.1.0",
         "@types/mocha": "9.1.1",
         "@types/node": "16.11.39",
         "@types/npm-package-arg": "6.1.1",
