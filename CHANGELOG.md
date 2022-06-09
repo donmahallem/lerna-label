@@ -1,3 +1,31 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+# [0.2.0](https://github.com/donmahallem/lerna-label/compare/v0.1.17...v0.2.0) (2022-06-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @actions/core to ~1.7.0 ([8eeb402](https://github.com/donmahallem/lerna-label/commit/8eeb4021f8a39cf71ce89ff08708a8eaab75ab4b))
+* **deps:** update dependency @actions/core to ~1.8.0 ([2baf135](https://github.com/donmahallem/lerna-label/commit/2baf1358c359b3a3c770d74f0f6e788588fe7b5c))
+* **deps:** update dependency @actions/core to ~1.8.1 ([789d076](https://github.com/donmahallem/lerna-label/commit/789d076ca8ee06369259b7cc25b853d943adfd71))
+* **deps:** update dependency @actions/core to ~1.8.2 ([3631f06](https://github.com/donmahallem/lerna-label/commit/3631f06826c91e34e60600a2a35d9d29326e7ac6))
+* **deps:** update dependency @actions/github to ~5.0.1 ([f185071](https://github.com/donmahallem/lerna-label/commit/f1850718361ad3669c610283084631ade90aa2ca))
+* **deps:** update dependency @actions/github to ~5.0.3 ([f984f0d](https://github.com/donmahallem/lerna-label/commit/f984f0da3346da43f96b621189a27d7aff2f67fe))
+* **deps:** update dependency @donmahallem/label-pr to ~0.3.9 ([a38259c](https://github.com/donmahallem/lerna-label/commit/a38259c67ef7503c649f752717c2f6d63cd2daab))
+* **deps:** update dependency @donmahallem/label-pr to ~0.4.2 ([8ecc4d3](https://github.com/donmahallem/lerna-label/commit/8ecc4d38ad8c47a00f125373955b5f38a643f118))
+* **deps:** update dependency @lerna/project to ~5.1.0 ([8919ba8](https://github.com/donmahallem/lerna-label/commit/8919ba83f8f6f3482eff53842d4a815a4a2061b5))
+* **deps:** update dependency @lerna/project to ~5.1.1 ([b50f9ea](https://github.com/donmahallem/lerna-label/commit/b50f9ea3e0a47cd4d16916cbe64ef27ad7c69ca1))
+* **deps:** update dependency @lerna/project to v5 ([f97e4ff](https://github.com/donmahallem/lerna-label/commit/f97e4ffa41548692808b878a0223310fb0f4b56f))
+
+
+### Features
+
+* **parse:** use npm-package-arg for parsing pkg name ([#436](https://github.com/donmahallem/lerna-label/issues/436)) ([2a6589a](https://github.com/donmahallem/lerna-label/commit/2a6589ac5893662d6d4ef8d5aa8a02cdc88b168b))
+
+
+
 ## [0.1.16](https://github.com/donmahallem/lerna-label/compare/v0.1.15...v0.1.16) (2022-03-14)
 
 
@@ -240,6 +268,3 @@
 ### Features
 
 * use docker to publish action ([#95](https://github.com/donmahallem/lerna-label/issues/95)) ([a4c7e16](https://github.com/donmahallem/lerna-label/commit/a4c7e163d29240c783d4944b17f2874951146e65))
-
-
-
