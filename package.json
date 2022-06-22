@@ -87,6 +87,6 @@
         "@donmahallem/label-pr": "~0.4.3",
         "@lerna/project": "~5.1.4",
         "@octokit/core": "~3.6.0",
-        "npm-package-arg": "~9.0.2"
+        "npm-package-arg": "~9.1.0"
     }
 }
