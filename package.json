@@ -64,7 +64,7 @@
         "@types/npm-package-arg": "6.1.1",
         "@types/sinon": "10.0.12",
         "chai": "4.3.6",
-        "commitizen": "4.2.4",
+        "commitizen": "4.2.5",
         "conventional-changelog-cli": "2.2.2",
         "eslint": "8.20.0",
         "mocha": "10.0.0",
