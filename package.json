@@ -85,7 +85,7 @@
         "@actions/core": "~1.10.0",
         "@actions/github": "~5.1.1",
         "@donmahallem/label-pr": "~0.4.4",
-        "@lerna/project": "~6.0.1",
+        "@lerna/project": "~6.0.2",
         "@octokit/core": "~4.1.0",
         "npm-package-arg": "~10.0.0"
     }
