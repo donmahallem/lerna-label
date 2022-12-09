@@ -2,6 +2,50 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.1](https://github.com/donmahallem/lerna-label/compare/v0.2.0...v0.2.1) (2022-12-09)
+
+
+### Bug Fixes
+
+* **deps:** bump @donmahallem/label-pr and @octokit/core dependencies ([#619](https://github.com/donmahallem/lerna-label/issues/619)) ([c4db945](https://github.com/donmahallem/lerna-label/commit/c4db945bc012ac9a136b81b21c22e8800a284e99))
+* **deps:** update dependency @actions/core to ~1.10.0 ([40bb024](https://github.com/donmahallem/lerna-label/commit/40bb024c1e2fc4f4a6c8703a85bff77146346168))
+* **deps:** update dependency @actions/core to ~1.9.0 ([b69817d](https://github.com/donmahallem/lerna-label/commit/b69817d8fe0cc260570b9faeacb37eb7efe5cacb))
+* **deps:** update dependency @actions/core to ~1.9.1 ([75635a1](https://github.com/donmahallem/lerna-label/commit/75635a1dc3704d9813fb26bd08827c608fd59631))
+* **deps:** update dependency @actions/github to ~5.1.0 ([833fc6b](https://github.com/donmahallem/lerna-label/commit/833fc6bb497e9ce51b25b3ca7bd3f52ed26a08bc))
+* **deps:** update dependency @actions/github to ~5.1.1 ([0be8586](https://github.com/donmahallem/lerna-label/commit/0be8586a17d09d0b36fcb148a105139c32cc612e))
+* **deps:** update dependency @donmahallem/label-pr to ~0.4.3 ([8b2e8ce](https://github.com/donmahallem/lerna-label/commit/8b2e8ced4fc55dfdce8b67c24c7271800734b862))
+* **deps:** update dependency @donmahallem/label-pr to ~0.4.5 ([65032fa](https://github.com/donmahallem/lerna-label/commit/65032fae3a279b31d27030e30a316e2eb39a2552))
+* **deps:** update dependency @lerna/project to ~5.1.2 ([c68fb32](https://github.com/donmahallem/lerna-label/commit/c68fb32be9491ec9bc4f282e960ae7bc900285ba))
+* **deps:** update dependency @lerna/project to ~5.1.4 ([e2683a9](https://github.com/donmahallem/lerna-label/commit/e2683a9b39c9c7a739510648d223849200107843))
+* **deps:** update dependency @lerna/project to ~5.1.5 ([e0bc4e8](https://github.com/donmahallem/lerna-label/commit/e0bc4e831292c8133ff7a4f3b2e28bd6aafa227e))
+* **deps:** update dependency @lerna/project to ~5.1.6 ([bdc734b](https://github.com/donmahallem/lerna-label/commit/bdc734b484ef41be281ee4ba252ffcaaf9b21916))
+* **deps:** update dependency @lerna/project to ~5.1.7 ([edb849f](https://github.com/donmahallem/lerna-label/commit/edb849f48d50dcb14b93ebd2a8ede1a1d27d8fea))
+* **deps:** update dependency @lerna/project to ~5.1.8 ([40795de](https://github.com/donmahallem/lerna-label/commit/40795debf6295c0e6072bbfd813a7bce56403f44))
+* **deps:** update dependency @lerna/project to ~5.3.0 ([#610](https://github.com/donmahallem/lerna-label/issues/610)) ([b10f288](https://github.com/donmahallem/lerna-label/commit/b10f2887dac7d1aee5316fc514d8418c6f53260d))
+* **deps:** update dependency @lerna/project to ~5.4.0 ([38da5ca](https://github.com/donmahallem/lerna-label/commit/38da5cab86f35d7666cab1a4ac53f0f121253390))
+* **deps:** update dependency @lerna/project to ~5.4.1 ([37c1ca5](https://github.com/donmahallem/lerna-label/commit/37c1ca54e3ff2df280d6550a5d2546aad04442dc))
+* **deps:** update dependency @lerna/project to ~5.4.2 ([ceaf4fd](https://github.com/donmahallem/lerna-label/commit/ceaf4fd56e103ed432eb7d61a2823e9122136ed0))
+* **deps:** update dependency @lerna/project to ~5.4.3 ([af2078c](https://github.com/donmahallem/lerna-label/commit/af2078cb13e25142a7934d526eb979ca6048db10))
+* **deps:** update dependency @lerna/project to ~5.5.0 ([aa8dd60](https://github.com/donmahallem/lerna-label/commit/aa8dd6021fc2f75a896f693fc356b868a7cf27c2))
+* **deps:** update dependency @lerna/project to ~5.5.1 ([13ce990](https://github.com/donmahallem/lerna-label/commit/13ce9909bf4ca0e3afd26b9934da76d5f6bf0dfd))
+* **deps:** update dependency @lerna/project to ~5.5.2 ([03c6e3f](https://github.com/donmahallem/lerna-label/commit/03c6e3f7e5e6cc093d45ada85a8d829855121f2b))
+* **deps:** update dependency @lerna/project to ~5.5.4 ([37bfc91](https://github.com/donmahallem/lerna-label/commit/37bfc910bbfe620fc1b9bc27c1d2e4d5e0bbf581))
+* **deps:** update dependency @lerna/project to ~5.6.0 ([336d7dd](https://github.com/donmahallem/lerna-label/commit/336d7ddee8b2c5c0fb48e81c7ed533e00493ef20))
+* **deps:** update dependency @lerna/project to ~5.6.1 ([aae9ed0](https://github.com/donmahallem/lerna-label/commit/aae9ed0c2730268a1e1a5f8efd0f9acda172d699))
+* **deps:** update dependency @lerna/project to ~5.6.2 ([77d857d](https://github.com/donmahallem/lerna-label/commit/77d857dd6e7818935f75b027157ae9cdfadfcaaa))
+* **deps:** update dependency @lerna/project to ~6.0.1 ([990ee95](https://github.com/donmahallem/lerna-label/commit/990ee95ada78a0915d1a6ae547641b5f236f509d))
+* **deps:** update dependency @lerna/project to ~6.0.2 ([8ee37f7](https://github.com/donmahallem/lerna-label/commit/8ee37f70b807c2768dde335a088d1c5467c696a9))
+* **deps:** update dependency @lerna/project to ~6.0.3 ([3598895](https://github.com/donmahallem/lerna-label/commit/3598895b6a44a5d56c86f94a6edd689ca724ce0d))
+* **deps:** update dependency @lerna/project to v6 ([de7bc7d](https://github.com/donmahallem/lerna-label/commit/de7bc7d802f53056ec5aa71eafbc73db3daf8b40))
+* **deps:** update dependency @octokit/core to ~4.0.5 ([bb8d9e1](https://github.com/donmahallem/lerna-label/commit/bb8d9e1c3dc17831e44ce24a9845150d395916d9))
+* **deps:** update dependency @octokit/core to ~4.1.0 ([0e37a25](https://github.com/donmahallem/lerna-label/commit/0e37a2576037c88bd8c6d7a35406869ff90b4ea4))
+* **deps:** update dependency npm-package-arg to ~10.1.0 ([493485c](https://github.com/donmahallem/lerna-label/commit/493485c8f97873338b202c52259e155f4bfa9ffe))
+* **deps:** update dependency npm-package-arg to ~9.1.0 ([1163175](https://github.com/donmahallem/lerna-label/commit/1163175411e0f29727dd6d04991913a7c8c00201))
+* **deps:** update dependency npm-package-arg to ~9.1.2 ([f8f0363](https://github.com/donmahallem/lerna-label/commit/f8f0363d2ed8842d1887c667784ade40477b242e))
+* **deps:** update dependency npm-package-arg to v10 ([dc81484](https://github.com/donmahallem/lerna-label/commit/dc81484c6ef64fcfda6ad029bec24a9eda2d7f55))
+
+
+
 # [0.2.0](https://github.com/donmahallem/lerna-label/compare/v0.1.17...v0.2.0) (2022-06-09)
 
 
