@@ -1,4 +1,4 @@
-FROM node:20.1-alpine
+FROM node:20.2-alpine
 
 WORKDIR /app
 COPY package*.json tsconfig*.json ./
