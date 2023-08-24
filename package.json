@@ -63,7 +63,7 @@
         "@types/node": "18.17.9",
         "@types/npm-package-arg": "6.1.1",
         "@types/sinon": "10.0.16",
-        "chai": "4.3.7",
+        "chai": "4.3.8",
         "commitizen": "4.3.0",
         "conventional-changelog-cli": "3.0.0",
         "eslint": "8.47.0",
