@@ -60,7 +60,7 @@
         "@types/lerna__package": "5.1.1",
         "@types/lerna__project": "5.1.0",
         "@types/mocha": "10.0.2",
-        "@types/node": "18.18.3",
+        "@types/node": "18.18.4",
         "@types/npm-package-arg": "6.1.2",
         "@types/sinon": "10.0.18",
         "chai": "4.3.10",
