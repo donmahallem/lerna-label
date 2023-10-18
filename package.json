@@ -57,7 +57,7 @@
         "@appnest/readme": "1.2.7",
         "@donmahallem/eslint-config": "1.0.195",
         "@types/chai": "4.3.9",
-        "@types/lerna__package": "5.1.1",
+        "@types/lerna__package": "5.1.2",
         "@types/lerna__project": "5.1.0",
         "@types/mocha": "10.0.2",
         "@types/node": "18.18.5",
