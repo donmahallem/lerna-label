@@ -5,11 +5,11 @@
 
 import * as actionscore from '@actions/core';
 import { syncPRLabels } from '@donmahallem/label-pr';
-import { IOpts } from '@donmahallem/label-pr/dist/types/sync-pr-labels';
+import { IOpts } from '@donmahallem/label-pr';
 import { Octokit } from '@octokit/core';
 import { resolve } from 'path';
-import { parseLernaPackages, IPackage } from './parse-lerna-packages';
-import { getChangedFiles } from './pr-changed-files';
+import { parseLernaPackages, IPackage } from './parse-lerna-packages.js';
+import { getChangedFiles } from './pr-changed-files.js';
 
 export const handle = async (octokit: Octokit, opts: IOpts, prefix = 'pkg', cwd = './'): Promise<void> => {
     const lernaCfg: IPackage[] = await parseLernaPackages(cwd);

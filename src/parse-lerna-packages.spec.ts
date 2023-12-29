@@ -6,7 +6,7 @@
 import { expect } from 'chai';
 import 'mocha';
 import { resolve } from 'path';
-import { parseLernaPackages, IPackage } from './parse-lerna-packages';
+import { parseLernaPackages, IPackage } from './parse-lerna-packages.js';
 
 describe('./parse-lerna-packages.ts', () => {
     const testDir = './tests';
