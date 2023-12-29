@@ -37,7 +37,7 @@ handle(githubClient, pullRequestConfig, config.PREFIX, './')
     .then((): void => {
         actionscore.info('Success');
     })
-    .catch((err: any | Error): void => {
+    .catch((err: Error): void => {
         // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
         actionscore.error(err);
         // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-argument

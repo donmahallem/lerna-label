@@ -11,7 +11,9 @@ import sinon from 'sinon';
 import type { handle } from './handle.js';
 import type { IPackage } from './parse-lerna-packages.js';
 
-/* eslint-disable  @typescript-eslint/no-unsafe-argument */
+/* eslint-disable  @typescript-eslint/no-unsafe-argument,
+  @typescript-eslint/no-unsafe-member-access,
+  @typescript-eslint/no-explicit-any */
 describe('handle.ts', () => {
     let sandbox: sinon.SinonSandbox;
     before((): void => {
@@ -33,7 +35,6 @@ describe('handle.ts', () => {
             parseLernaPackages = sandbox.stub().named('parseLernaPackages');
             getChangedFilesStub = sandbox.stub().named('getChangedFiles');
             syncPRLabelsStub = sandbox.stub().named('syncPRLabels');
-            // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
             testMethod = (
                 await esmock('./handle', {
                     './parse-lerna-packages': { parseLernaPackages },
