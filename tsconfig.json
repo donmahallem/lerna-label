@@ -9,7 +9,8 @@
         "declaration": true,
         "moduleResolution": "NodeNext",
         "strictNullChecks": true,
-        "noUnusedLocals": true
+        "noUnusedLocals": true,
+        "types": ["node","chai","mocha"]
     },
     "typeAcquisition": {
         "enable": true

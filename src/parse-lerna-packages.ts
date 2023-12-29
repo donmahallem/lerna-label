@@ -16,7 +16,6 @@ export interface IPackage {
 
 /**
  * naïvely splits package name into optional scope and basename
- *
  * @param {string} name package name
  * @returns {SplitPackage} package name by scope
  */
