@@ -5,10 +5,10 @@
 
 import * as actionscore from '@actions/core';
 import { context as githubContext, getOctokit } from '@actions/github';
-import { IOpts } from '@donmahallem/label-pr/dist/types/sync-pr-labels';
+import { IOpts } from '@donmahallem/label-pr';
 import { Octokit } from '@octokit/core';
-import { IConfig } from './config';
-import { handle } from './handle';
+import { IConfig } from './config.js';
+import { handle } from './handle.js';
 
 const config: IConfig = {
     GITHUB_SECRET: actionscore.getInput('github_secret', {

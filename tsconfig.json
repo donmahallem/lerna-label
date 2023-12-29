@@ -1,13 +1,13 @@
 {
     "compilerOptions": {
-        "target": "es6",
-        "module": "commonjs",
+        "target": "ES2022",
+        "module": "NodeNext",
         "outDir": "dist",
         "rootDir": "./src",
         "sourceMap": true,
         "esModuleInterop": true,
         "declaration": true,
-        "moduleResolution": "node",
+        "moduleResolution": "NodeNext",
         "strictNullChecks": true,
         "noUnusedLocals": true
     },
