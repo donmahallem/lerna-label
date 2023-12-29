@@ -18,9 +18,9 @@
         "test:coverage": "c8 --config  ./.nycrc.json npm run test",
         "build:readme": "npx @appnest/readme generate --input ./readme_blueprint.md --config readme_config.json",
         "build": "tsc -p tsconfig.app.json",
-        "lint": "eslint -c .eslintrc.js --ext .ts ./src",
+        "lint": "eslint -c .eslintrc.cjs --ext .ts ./src",
         "postlint": "prettier --config .prettierrc src/**/*.ts src/*.ts --check",
-        "lint:fix": "eslint -c .eslintrc.js --ext .ts ./src --fix",
+        "lint:fix": "eslint -c .eslintrc.cjs --ext .ts ./src --fix",
         "postlint:fix": "prettier --config .prettierrc src/**/*.ts src/*.ts --write",
         "docs": "typedoc --options typedoc.json",
         "version": "npm run build:readme && git add README.md"

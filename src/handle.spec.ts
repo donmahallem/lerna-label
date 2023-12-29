@@ -4,7 +4,7 @@
  */
 
 import { expect } from 'chai';
-import{strict as esmock}from 'esmock';
+import { strict as esmock } from 'esmock';
 import 'mocha';
 import { resolve } from 'path';
 import sinon from 'sinon';
@@ -28,20 +28,23 @@ describe('handle.ts', () => {
         let getChangedFilesStub: sinon.SinonStub;
         let syncPRLabelsStub: sinon.SinonStub;
         let parseLernaPackages: sinon.SinonStub;
-        let testMethod:typeof handle
+        let testMethod: typeof handle;
         before(async (): Promise<void> => {
-            parseLernaPackages = sandbox.stub().named( 'parseLernaPackages');
+            parseLernaPackages = sandbox.stub().named('parseLernaPackages');
             getChangedFilesStub = sandbox.stub().named('getChangedFiles');
-            syncPRLabelsStub = sandbox.stub().named( 'syncPRLabels');
-            testMethod = (await esmock('./handle', {
-                './parse-lerna-packages': { parseLernaPackages },
-                './pr-changed-files': {
-                    getChangedFiles:getChangedFilesStub,
-                },
-                "@donmahallem/label-pr":{
-                    syncPRLabels:syncPRLabelsStub
-                }
-            })).handle as typeof handle;
+            syncPRLabelsStub = sandbox.stub().named('syncPRLabels');
+            // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+            testMethod = (
+                await esmock('./handle', {
+                    './parse-lerna-packages': { parseLernaPackages },
+                    './pr-changed-files': {
+                        getChangedFiles: getChangedFilesStub,
+                    },
+                    '@donmahallem/label-pr': {
+                        syncPRLabels: syncPRLabelsStub,
+                    },
+                })
+            ).handle as typeof handle;
         });
         it('a', async (): Promise<void> => {
             const testPackages: IPackage[] = [
