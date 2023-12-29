@@ -43,7 +43,7 @@ jobs:
                   body="${body//'%'/'%25'}"
                   body="${body//$'\n'/'%0A'}"
                   body="${body//$'\r'/'%0D'}" 
-                  echo ::set-output name=body::$body
+                  echo "body=$body" >> $GITHUB_OUTPUT
                   node ./.github/extract-version.cjs
             - name: Prepare Release
               uses: peter-evans/create-pull-request@v5.0.2
