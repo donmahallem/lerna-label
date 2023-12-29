@@ -1,2 +1,2 @@
-const data = require('./../package.json');
-console.log(`::set-output name=version::${data.version}`)
+const data = require('../package.json');
+console.log(`echo "version=${data.version}" >> $GITHUB_OUTPUT`)
