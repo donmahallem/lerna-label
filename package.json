@@ -76,7 +76,7 @@
         "sinon": "18.0.0",
         "standard-version": "9.5.0",
         "ts-node": "10.9.2",
-        "typedoc": "0.26.4",
+        "typedoc": "0.26.5",
         "typescript": "5.5.3"
     },
     "files": [
