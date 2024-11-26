@@ -72,7 +72,7 @@
         "esmock": "2.6.9",
         "mocha": "10.8.2",
         "nodemon": "3.1.7",
-        "prettier": "3.4.0",
+        "prettier": "3.4.1",
         "sinon": "19.0.2",
         "standard-version": "9.5.0",
         "ts-node": "10.9.2",
