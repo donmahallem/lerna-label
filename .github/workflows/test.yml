@@ -2,50 +2,50 @@ name: Test
 on: [push, pull_request]
 
 jobs:
-  test_project:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node: [ '18', '20' ]
-    name: Node ${{ matrix.node }} Tests
-    steps:
-      - name: Check out the repo
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
-      - name: Setup node
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node }}
-      - name: Npm install
-        run: npm ci
-      - name: Npm Lint
-        run: npm run lint
-      - name: Npm test
-        run: npm run test:coverage
-      - name: Upload coverage to Codecov Monorepo
-        uses: codecov/codecov-action@v5.3.1
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          name: Test
-          fail_ci_if_error: false
-          verbose: false
-  test_project_docker:
-    runs-on: ubuntu-latest
-    name: Docker Tests
-    steps:
-      - name: Check out the repo
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
-      - name: Set up QEMU
-        uses: docker/setup-qemu-action@v3
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
-      - name: Test Build
-        run: docker build . -t donmahallem/lerna-label
-      - name: Image Info
-        run: docker images donmahallem/lerna-label
-  finish:
-    needs: [test_project, test_project_docker]
-    name: Finish Test
-    runs-on: ubuntu-latest
-    steps:
-    - name: Coveralls Finished
-      run: echo "finish"
+    test_project:
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                node: ['20', '22']
+        name: Node ${{ matrix.node }} Tests
+        steps:
+            - name: Check out the repo
+              uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+            - name: Setup node
+              uses: actions/setup-node@v4
+              with:
+                  node-version: ${{ matrix.node }}
+            - name: Npm install
+              run: npm ci
+            - name: Npm Lint
+              run: npm run lint
+            - name: Npm test
+              run: npm run test:coverage
+            - name: Upload coverage to Codecov Monorepo
+              uses: codecov/codecov-action@v5.3.1
+              with:
+                  token: ${{ secrets.CODECOV_TOKEN }}
+                  name: Test
+                  fail_ci_if_error: false
+                  verbose: false
+    test_project_docker:
+        runs-on: ubuntu-latest
+        name: Docker Tests
+        steps:
+            - name: Check out the repo
+              uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+            - name: Set up QEMU
+              uses: docker/setup-qemu-action@v3
+            - name: Set up Docker Buildx
+              uses: docker/setup-buildx-action@v3
+            - name: Test Build
+              run: docker build . -t donmahallem/lerna-label
+            - name: Image Info
+              run: docker images donmahallem/lerna-label
+    finish:
+        needs: [test_project, test_project_docker]
+        name: Finish Test
+        runs-on: ubuntu-latest
+        steps:
+            - name: Coveralls Finished
+              run: echo "finish"
