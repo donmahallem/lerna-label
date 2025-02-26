@@ -1,4 +1,4 @@
-/*
+/**
  * Package @donmahallem/lerna-label
  * Source https://github.com/donmahallem/lerna-label/
  */
@@ -8,9 +8,10 @@ import 'mocha';
 import { resolve } from 'path';
 import { parseLernaPackages, IPackage } from './parse-lerna-packages.js';
 
-describe('./parse-lerna-packages.ts', () => {
+describe('./parse-lerna-packages.ts', function () {
     const testDir = './tests';
-    it('should parse lerna package roots correctly', async (): Promise<void> => {
+
+    it('should parse lerna package roots correctly', async function (): Promise<void> {
         const result: IPackage[] = await parseLernaPackages(testDir);
         expect(result).to.deep.equal([
             {

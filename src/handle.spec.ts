@@ -1,4 +1,4 @@
-/*
+/**
  * Package @donmahallem/lerna-label
  * Source https://github.com/donmahallem/lerna-label/
  */
@@ -11,27 +11,29 @@ import sinon from 'sinon';
 import type { handle } from './handle.js';
 import type { IPackage } from './parse-lerna-packages.js';
 
-/* eslint-disable  @typescript-eslint/no-unsafe-argument,
-  @typescript-eslint/no-unsafe-member-access,
-  @typescript-eslint/no-explicit-any */
-describe('handle.ts', () => {
+/* eslint-disable  @typescript-eslint/no-explicit-any */
+describe('handle.ts', function () {
     let sandbox: sinon.SinonSandbox;
-    before((): void => {
+
+    before(function (): void {
         sandbox = sinon.createSandbox();
     });
 
-    afterEach((): void => {
+    afterEach(function (): void {
         sandbox.reset();
     });
-    after((): void => {
+
+    after(function (): void {
         sandbox.restore();
     });
-    describe('handle', (): void => {
+
+    describe('handle', function (): void {
         let getChangedFilesStub: sinon.SinonStub;
         let syncPRLabelsStub: sinon.SinonStub;
         let parseLernaPackages: sinon.SinonStub;
         let testMethod: typeof handle;
-        before(async (): Promise<void> => {
+
+        before(async function (): Promise<void> {
             parseLernaPackages = sandbox.stub().named('parseLernaPackages');
             getChangedFilesStub = sandbox.stub().named('getChangedFiles');
             syncPRLabelsStub = sandbox.stub().named('syncPRLabels');
@@ -47,7 +49,8 @@ describe('handle.ts', () => {
                 })
             ).handle as typeof handle;
         });
-        it('a', async (): Promise<void> => {
+
+        it('a', async function (): Promise<void> {
             const testPackages: IPackage[] = [
                 {
                     location: resolve('./packages/dir1'),

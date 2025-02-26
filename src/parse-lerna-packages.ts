@@ -1,4 +1,4 @@
-/*
+/**
  * Package @donmahallem/lerna-label
  * Source https://github.com/donmahallem/lerna-label/
  */
@@ -37,7 +37,6 @@ const parsePackageName = (
           };
 };
 export const parseLernaPackages = async (cwd: string): Promise<IPackage[]> => {
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call
     const pkgs: Package[] = await getPackages(cwd);
 
     return pkgs.map((pkg: Package): IPackage => {

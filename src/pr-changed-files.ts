@@ -1,4 +1,4 @@
-/*
+/**
  * Package @donmahallem/lerna-label
  * Source https://github.com/donmahallem/lerna-label/
  */
