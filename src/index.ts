@@ -1,4 +1,4 @@
-/*
+/**
  * Package @donmahallem/lerna-label
  * Source https://github.com/donmahallem/lerna-label/
  */
@@ -38,8 +38,7 @@ handle(githubClient, pullRequestConfig, config.PREFIX, './')
         actionscore.info('Success');
     })
     .catch((err: Error): void => {
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
         actionscore.error(err);
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-argument
+
         actionscore.setFailed(err?.message || 'Error');
     });
