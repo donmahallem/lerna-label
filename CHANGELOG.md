@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [](https://github.com/donmahallem/lerna-label/compare/v1.1.0...v) (2025-03-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @octokit/core to ~5.2.1 ([#1530](https://github.com/donmahallem/lerna-label/issues/1530)) ([a5fa20c](https://github.com/donmahallem/lerna-label/commit/a5fa20cf076fbdddf53dfc28ef0e9a69a1accd7c))
+
+
+### Features
+
+* use node 22 ([#1492](https://github.com/donmahallem/lerna-label/issues/1492)) ([e2a8f58](https://github.com/donmahallem/lerna-label/commit/e2a8f582f343f04c879bce8fd4d9af44b8eebdcf))
+
+
+
 # [1.0.0](https://github.com/donmahallem/lerna-label/compare/v0.2.1...v1.0.0) (2023-12-30)
 
 
