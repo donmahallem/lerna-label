@@ -71,7 +71,7 @@
         "eslint": "9.25.1",
         "esmock": "2.7.0",
         "mocha": "11.1.0",
-        "nodemon": "3.1.9",
+        "nodemon": "3.1.10",
         "prettier": "3.5.3",
         "sinon": "20.0.0",
         "standard-version": "9.5.0",
