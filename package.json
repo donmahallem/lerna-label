@@ -68,7 +68,7 @@
         "chai": "5.2.0",
         "commitizen": "4.3.1",
         "conventional-changelog-cli": "5.0.0",
-        "eslint": "9.29.0",
+        "eslint": "9.30.0",
         "esmock": "2.7.0",
         "mocha": "11.7.1",
         "nodemon": "3.1.10",
