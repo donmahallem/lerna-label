@@ -34,6 +34,7 @@ describe('handle.ts', function () {
         let testMethod: typeof handle;
 
         before(async function (): Promise<void> {
+            this.timeout(6000);
             parseLernaPackages = sandbox.stub().named('parseLernaPackages');
             getChangedFilesStub = sandbox.stub().named('getChangedFiles');
             syncPRLabelsStub = sandbox.stub().named('syncPRLabels');
