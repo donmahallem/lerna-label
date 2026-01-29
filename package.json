@@ -41,7 +41,7 @@
         "url": "https://github.com/donmahallem/lerna-label.git"
     },
     "engines": {
-        "node": ">=20.0.0"
+        "node": ">=22.0.0"
     },
     "contributors": [
         {
@@ -70,7 +70,7 @@
         "conventional-changelog-cli": "5.0.0",
         "eslint": "9.32.0",
         "esmock": "2.7.1",
-        "mocha": "11.7.1",
+        "mocha": "11.7.5",
         "nodemon": "3.1.10",
         "prettier": "3.6.2",
         "sinon": "21.0.0",

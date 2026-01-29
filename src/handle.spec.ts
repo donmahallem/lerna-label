@@ -34,20 +34,23 @@ describe('handle.ts', function () {
         let testMethod: typeof handle;
 
         before(async function (): Promise<void> {
+            this.timeout(6000);
             parseLernaPackages = sandbox.stub().named('parseLernaPackages');
             getChangedFilesStub = sandbox.stub().named('getChangedFiles');
             syncPRLabelsStub = sandbox.stub().named('syncPRLabels');
             testMethod = (
-                await esmock('./handle', {
-                    './parse-lerna-packages': { parseLernaPackages },
-                    './pr-changed-files': {
+                await esmock('./handle.js', {
+                    './parse-lerna-packages.js': {
+                        parseLernaPackages,
+                    },
+                    './pr-changed-files.js': {
                         getChangedFiles: getChangedFilesStub,
                     },
                     '@donmahallem/label-pr': {
                         syncPRLabels: syncPRLabelsStub,
                     },
                 })
-            ).handle as typeof handle;
+            ).handle;
         });
 
         it('a', async function (): Promise<void> {

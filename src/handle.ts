@@ -8,7 +8,8 @@ import { syncPRLabels } from '@donmahallem/label-pr';
 import { IOpts } from '@donmahallem/label-pr';
 import { Octokit } from '@octokit/core';
 import { resolve } from 'path';
-import { parseLernaPackages, IPackage } from './parse-lerna-packages.js';
+import { parseLernaPackages } from './parse-lerna-packages.js';
+import type { IPackage } from './parse-lerna-packages.js';
 import { getChangedFiles } from './pr-changed-files.js';
 
 export const handle = async (octokit: Octokit, opts: IOpts, prefix = 'pkg', cwd = './'): Promise<void> => {
