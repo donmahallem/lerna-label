@@ -84,8 +84,8 @@
         "src/*"
     ],
     "dependencies": {
-        "@actions/core": "~2.0.3",
-        "@actions/github": "~7.0.0",
+        "@actions/core": "~3.0.0",
+        "@actions/github": "~9.0.0",
         "@donmahallem/label-pr": "~0.6.14",
         "@lerna/project": "~6.4.1",
         "@octokit/core": "~7.0.6",
