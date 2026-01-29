@@ -34,24 +34,9 @@ jobs:
               run: |
                   git config --local user.email "donmahallem@users.noreply.github.com"
                   git config --local user.name "donmahallem"
-            - name: Version Packages
-              run: npx standard-version
-            - name: Create Release Body
-              id: get-pr-body
-              run: |
-                  body=$(npx conventional-changelog -r 1)
-                  body="${body//'%'/'%25'}"
-                  body="${body//$'\n'/'%0A'}"
-                  body="${body//$'\r'/'%0D'}" 
-                  echo "body=$body" >> $GITHUB_OUTPUT
-                  node ./.github/extract-version.cjs
-            - name: Prepare Release
-              uses: peter-evans/create-pull-request@v7.0.8
+            - name: Create Release PR
+              uses: release-please/action@v3
               with:
-                  branch: release-staging
-                  title: 'chore: stage release ${{ steps.get-pr-body.outputs.version }} [skip ci]'
-                  body: ${{ steps.get-pr-body.outputs.body }}
                   token: ${{ secrets.GITHUB_TOKEN }}
-                  base: main
-                  commit-message: 'chore: stage release ${{ steps.get-pr-body.outputs.version }}'
-                  reviewers: donmahallem
+                  package-name: '@donmahallem/lerna-label'
+                  release-type: node
