@@ -39,7 +39,9 @@ describe('handle.ts', function () {
             syncPRLabelsStub = sandbox.stub().named('syncPRLabels');
             testMethod = (
                 await esmock('./handle.js', {
-                    './parse-lerna-packages.js': { parseLernaPackages },
+                    './parse-lerna-packages.js': {
+                        parseLernaPackages,
+                    },
                     './pr-changed-files.js': {
                         getChangedFiles: getChangedFilesStub,
                     },
@@ -47,7 +49,7 @@ describe('handle.ts', function () {
                         syncPRLabels: syncPRLabelsStub,
                     },
                 })
-            ).handle as typeof handle;
+            ).handle;
         });
 
         it('a', async function (): Promise<void> {
