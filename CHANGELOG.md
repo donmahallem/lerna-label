@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [](https://github.com/donmahallem/lerna-label/compare/v1.1.0...v) (2026-01-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @actions/github to ~6.0.1 ([#1595](https://github.com/donmahallem/lerna-label/issues/1595)) ([9bea483](https://github.com/donmahallem/lerna-label/commit/9bea4833d8976bae4535cffa879b9476ea1c0e97))
+* **deps:** update dependency @octokit/core to ~5.2.1 ([#1530](https://github.com/donmahallem/lerna-label/issues/1530)) ([a5fa20c](https://github.com/donmahallem/lerna-label/commit/a5fa20cf076fbdddf53dfc28ef0e9a69a1accd7c))
+* **deps:** update dependency @octokit/core to ~5.2.2 ([#1680](https://github.com/donmahallem/lerna-label/issues/1680)) ([72d3a23](https://github.com/donmahallem/lerna-label/commit/72d3a239263cc7195111be8a7ca0154fdff6de85))
+* **deps:** update dependency npm-package-arg to v13 ([#1695](https://github.com/donmahallem/lerna-label/issues/1695)) ([fe21f30](https://github.com/donmahallem/lerna-label/commit/fe21f302af634b4b5392c82768041b2aeb206960))
+
+
+### Features
+
+* use node 22 ([#1492](https://github.com/donmahallem/lerna-label/issues/1492)) ([e2a8f58](https://github.com/donmahallem/lerna-label/commit/e2a8f582f343f04c879bce8fd4d9af44b8eebdcf))
+
+
+
 # [1.0.0](https://github.com/donmahallem/lerna-label/compare/v0.2.1...v1.0.0) (2023-12-30)
 
 
