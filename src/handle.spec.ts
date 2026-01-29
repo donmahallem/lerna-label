@@ -38,9 +38,9 @@ describe('handle.ts', function () {
             getChangedFilesStub = sandbox.stub().named('getChangedFiles');
             syncPRLabelsStub = sandbox.stub().named('syncPRLabels');
             testMethod = (
-                await esmock('./handle', {
-                    './parse-lerna-packages': { parseLernaPackages },
-                    './pr-changed-files': {
+                await esmock('./handle.js', {
+                    './parse-lerna-packages.js': { parseLernaPackages },
+                    './pr-changed-files.js': {
                         getChangedFiles: getChangedFilesStub,
                     },
                     '@donmahallem/label-pr': {
