@@ -21,6 +21,13 @@ All notable changes to this project will be documented in this file. See [standa
 
 
 
+## [1.2.1](https://github.com/donmahallem/lerna-label/compare/v1.2.0...v1.2.1) (2026-02-07)
+
+
+### Bug Fixes
+
+* **package:** remove tag ([351fa9a](https://github.com/donmahallem/lerna-label/commit/351fa9ad7eadbd4992a5cfeb55c69d956542c59e))
+
 ## [1.2.0](https://github.com/donmahallem/lerna-label/compare/v1.1.0...v1.2.0) (2026-01-29)
 
 
