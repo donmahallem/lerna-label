@@ -10,7 +10,8 @@
         "action",
         "lerna",
         "tag",
-        "pull-request"
+        "pull-request",
+        "pr"
     ],
     "scripts": {
         "test": "mocha --config ./.mocharc.json",
