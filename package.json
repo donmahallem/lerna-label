@@ -56,7 +56,7 @@
     ],
     "devDependencies": {
         "@appnest/readme": "1.2.7",
-        "@donmahallem/eslint-config": "2.3.244",
+        "@donmahallem/eslint-config": "2.3.245",
         "@types/chai": "5.2.3",
         "@types/lerna__package": "5.1.3",
         "@types/lerna__project": "5.1.2",
