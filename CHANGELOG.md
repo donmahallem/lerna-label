@@ -21,6 +21,13 @@ All notable changes to this project will be documented in this file. See [standa
 
 
 
+## [1.2.3](https://github.com/donmahallem/lerna-label/compare/v1.2.2...v1.2.3) (2026-02-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @donmahallem/label-pr to ~0.6.15 ([#1749](https://github.com/donmahallem/lerna-label/issues/1749)) ([3ccdc01](https://github.com/donmahallem/lerna-label/commit/3ccdc014d76b68949cfad0258cad6049e2703a62))
+
 ## [1.2.2](https://github.com/donmahallem/lerna-label/compare/v1.2.1...v1.2.2) (2026-02-07)
 
 
