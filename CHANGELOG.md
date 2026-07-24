@@ -21,6 +21,20 @@ All notable changes to this project will be documented in this file. See [standa
 
 
 
+## [1.2.3](https://github.com/donmahallem/lerna-label/compare/v1.2.2...v1.2.3) (2026-07-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @actions/core to ~3.0.1 ([#1819](https://github.com/donmahallem/lerna-label/issues/1819)) ([0191059](https://github.com/donmahallem/lerna-label/commit/01910599a3dbd9674e25735731a55e3f608b0274))
+* **deps:** update dependency @actions/github to ~9.1.0 ([#1802](https://github.com/donmahallem/lerna-label/issues/1802)) ([673d0fe](https://github.com/donmahallem/lerna-label/commit/673d0fe20dad0983a5feab472b8e384ece6ff620))
+* **deps:** update dependency @actions/github to ~9.1.1 ([#1820](https://github.com/donmahallem/lerna-label/issues/1820)) ([de3a270](https://github.com/donmahallem/lerna-label/commit/de3a2705c63e0283022451d4ef6f35973a25d18b))
+* **deps:** update dependency @donmahallem/label-pr to ~0.6.15 ([#1749](https://github.com/donmahallem/lerna-label/issues/1749)) ([3ccdc01](https://github.com/donmahallem/lerna-label/commit/3ccdc014d76b68949cfad0258cad6049e2703a62))
+* **deps:** update dependency @donmahallem/label-pr to ~0.6.16 ([#1832](https://github.com/donmahallem/lerna-label/issues/1832)) ([47ff5c4](https://github.com/donmahallem/lerna-label/commit/47ff5c4c894ab044cdddba7986599e7b0f150be4))
+* **deps:** update dependency @donmahallem/label-pr to ~0.6.17 ([#1836](https://github.com/donmahallem/lerna-label/issues/1836)) ([9e21c59](https://github.com/donmahallem/lerna-label/commit/9e21c590acff4d60df02010e192d1178be9997ea))
+* **deps:** update dependency @donmahallem/label-pr to ~0.6.18 ([#1854](https://github.com/donmahallem/lerna-label/issues/1854)) ([588b151](https://github.com/donmahallem/lerna-label/commit/588b151296e4bc7d274d17d0f1b625b19c45aa1b))
+* **deps:** update dependency npm-package-arg to v14 ([#1841](https://github.com/donmahallem/lerna-label/issues/1841)) ([3f91442](https://github.com/donmahallem/lerna-label/commit/3f914428bd67a2dc181c7adf3d5f8c7802ae397b))
+
 ## [1.2.2](https://github.com/donmahallem/lerna-label/compare/v1.2.1...v1.2.2) (2026-02-07)
 
 
