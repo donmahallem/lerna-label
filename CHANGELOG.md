@@ -21,6 +21,38 @@ All notable changes to this project will be documented in this file. See [standa
 
 
 
+## 1.0.0 (2026-10-03)
+
+
+### Features
+
+* use node 22 ([#1492](https://github.com/donmahallem/lerna-label/issues/1492)) ([e2a8f58](https://github.com/donmahallem/lerna-label/commit/e2a8f582f343f04c879bce8fd4d9af44b8eebdcf))
+
+
+### Bug Fixes
+
+* **deps:** fix up dependency clashes ([#1723](https://github.com/donmahallem/lerna-label/issues/1723)) ([e1cdada](https://github.com/donmahallem/lerna-label/commit/e1cdada048c7532c007f137b02d8de12e17627bc))
+* **deps:** update dependency @actions/core to ~3.0.1 ([#1819](https://github.com/donmahallem/lerna-label/issues/1819)) ([0191059](https://github.com/donmahallem/lerna-label/commit/01910599a3dbd9674e25735731a55e3f608b0274))
+* **deps:** update dependency @actions/github to ~6.0.1 ([#1595](https://github.com/donmahallem/lerna-label/issues/1595)) ([9bea483](https://github.com/donmahallem/lerna-label/commit/9bea4833d8976bae4535cffa879b9476ea1c0e97))
+* **deps:** update dependency @actions/github to ~9.1.0 ([#1802](https://github.com/donmahallem/lerna-label/issues/1802)) ([673d0fe](https://github.com/donmahallem/lerna-label/commit/673d0fe20dad0983a5feab472b8e384ece6ff620))
+* **deps:** update dependency @actions/github to ~9.1.1 ([#1820](https://github.com/donmahallem/lerna-label/issues/1820)) ([de3a270](https://github.com/donmahallem/lerna-label/commit/de3a2705c63e0283022451d4ef6f35973a25d18b))
+* **deps:** update dependency @donmahallem/label-pr to ~0.6.15 ([#1749](https://github.com/donmahallem/lerna-label/issues/1749)) ([3ccdc01](https://github.com/donmahallem/lerna-label/commit/3ccdc014d76b68949cfad0258cad6049e2703a62))
+* **deps:** update dependency @donmahallem/label-pr to ~0.6.16 ([#1832](https://github.com/donmahallem/lerna-label/issues/1832)) ([47ff5c4](https://github.com/donmahallem/lerna-label/commit/47ff5c4c894ab044cdddba7986599e7b0f150be4))
+* **deps:** update dependency @donmahallem/label-pr to ~0.6.17 ([#1836](https://github.com/donmahallem/lerna-label/issues/1836)) ([9e21c59](https://github.com/donmahallem/lerna-label/commit/9e21c590acff4d60df02010e192d1178be9997ea))
+* **deps:** update dependency @donmahallem/label-pr to ~0.6.18 ([#1854](https://github.com/donmahallem/lerna-label/issues/1854)) ([588b151](https://github.com/donmahallem/lerna-label/commit/588b151296e4bc7d274d17d0f1b625b19c45aa1b))
+* **deps:** update dependency @donmahallem/label-pr to ~0.6.20 ([#1927](https://github.com/donmahallem/lerna-label/issues/1927)) ([ddd595e](https://github.com/donmahallem/lerna-label/commit/ddd595e70f0f9bc992185b9e4638a089e5879f80))
+* **deps:** update dependency @donmahallem/label-pr to ~0.6.21 ([#1952](https://github.com/donmahallem/lerna-label/issues/1952)) ([1aae29f](https://github.com/donmahallem/lerna-label/commit/1aae29fe3db89ddd80d91017e9cb3c6631ea28ce))
+* **deps:** update dependency @donmahallem/label-pr to ~0.6.22 ([#1956](https://github.com/donmahallem/lerna-label/issues/1956)) ([7ad948b](https://github.com/donmahallem/lerna-label/commit/7ad948b14fd31049bd34965e45ab329571e41c0f))
+* **deps:** update dependency @donmahallem/label-pr to ~0.6.23 ([#1997](https://github.com/donmahallem/lerna-label/issues/1997)) ([d2c0618](https://github.com/donmahallem/lerna-label/commit/d2c0618774fd99d764d3eb510d43bb0653a8be74))
+* **deps:** update dependency @octokit/core to ~5.2.1 ([#1530](https://github.com/donmahallem/lerna-label/issues/1530)) ([a5fa20c](https://github.com/donmahallem/lerna-label/commit/a5fa20cf076fbdddf53dfc28ef0e9a69a1accd7c))
+* **deps:** update dependency @octokit/core to ~5.2.2 ([#1680](https://github.com/donmahallem/lerna-label/issues/1680)) ([72d3a23](https://github.com/donmahallem/lerna-label/commit/72d3a239263cc7195111be8a7ca0154fdff6de85))
+* **deps:** update dependency @octokit/core to ~7.0.7 ([#1926](https://github.com/donmahallem/lerna-label/issues/1926)) ([7eddb2a](https://github.com/donmahallem/lerna-label/commit/7eddb2a398dd1b0f307f4622cc9e94cda72f6526))
+* **deps:** update dependency @octokit/core to ~7.0.8 ([#1949](https://github.com/donmahallem/lerna-label/issues/1949)) ([2d16139](https://github.com/donmahallem/lerna-label/commit/2d161391881bee605b8bbd2173135fc4ef2b142a))
+* **deps:** update dependency npm-package-arg to v13 ([#1695](https://github.com/donmahallem/lerna-label/issues/1695)) ([fe21f30](https://github.com/donmahallem/lerna-label/commit/fe21f302af634b4b5392c82768041b2aeb206960))
+* **deps:** update dependency npm-package-arg to v14 ([#1841](https://github.com/donmahallem/lerna-label/issues/1841)) ([3f91442](https://github.com/donmahallem/lerna-label/commit/3f914428bd67a2dc181c7adf3d5f8c7802ae397b))
+* **package:** remove tag ([351fa9a](https://github.com/donmahallem/lerna-label/commit/351fa9ad7eadbd4992a5cfeb55c69d956542c59e))
+* **package:** trigger release ([a65fc94](https://github.com/donmahallem/lerna-label/commit/a65fc9435d578585debd446adbfda6cb74e6d8b5))
+
 ## [1.2.2](https://github.com/donmahallem/lerna-label/compare/v1.2.1...v1.2.2) (2026-02-07)
 
 
